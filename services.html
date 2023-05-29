@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBiz Services</title>
+    <link rel="stylesheet" href="assets\css\services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <header id="navBar">
+        <div class="logo">
+        <img src="assets\img\logo-header.png" alt="logo">
+
+        </div>
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navBarList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Clients/ Partner</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="intro-hero" id="intro-flip-cards">
+            <h1 class="title">Hover over the cards</h1>
+
+            <div id="app" class="container">
+            <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
+                <h1 slot="header">Canyons</h1>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </card>
+            <card data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                <h1 slot="header">Beaches</h1>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </card>
+            <card data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                <h1 slot="header">Trees</h1>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </card>
+            <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
+                <h1 slot="header">Lakes</h1>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </card>
+            </div>
+    
+        </section>
+
+        <section class="many_cards">
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?mountain" alt="mountain" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?field" alt="field" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?water" alt="water" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?river" alt="river" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?kite" alt="kite" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?underwater" alt="underwater" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="https://source.unsplash.com/300x225/?desert" alt="desert" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>
+                            Card title
+                            <small>Image from unsplash.com</small>
+                        </h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
+                            when they're not available etc.
+                        </div>
+                        <div class="card-flap flap2">
+                            <div class="card-actions">
+                                <a href="#" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div
+        </section>
+
+<!-- <section class="my_cards">
+    <div class="item1">
+        <div class="card_image">
+            <img class="image_card" src="" alt="">
+        </div>
+        <div class="title_within">
+            <h2>
+                TechBiz Title 1 </h2>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reprehenderit.</small>
+        </div>
+    </div>
+    <div class="item2">
+        <div class="card_image">
+            <img class="image_card" src="" alt="">
+        </div>
+        <div class="title_within">
+            <h2>
+                TechBiz Title 2 </h2>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reprehenderit.</small>
+        </div>
+    </div>
+    <div class="item3">
+        <div class="card_image">
+            <img class="image_card" src="" alt="">
+        </div>
+        <div class="title_within">
+            <h2>
+                TechBiz Title 3 </h2>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reprehenderit.</small>
+        </div>
+    </div>
+    <div class="item4">
+        <div class="card_image">
+            <img class="image_card" src="" alt="">
+        </div>
+        <div class="title_within">
+            <h2>
+                TechBiz Title 4 </h2>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reprehenderit.</small>
+        </div>
+    </div>
+</section> -->
+
+<section>
+    
+</section>
+
+
+    </main>
+
+    <footer>
+        <div class="footTop">
+            <div class="foot-about">
+            <img src="assets\img\logo-header.png" alt="logo">
+            <!-- <div class="foot-about-text"> -->
+            <p><i> Techbiz Ltd is a Leading ICT Systems Integrator
+            Company in East Africa with Corporate Headquarters
+            in Nairobi, Kenya. We are an ISO 9001-2008 certified company.
+        </i></p>
+            <!-- </div> -->
+            </div>
+
+            <div class="connectWithUs">
+                <h3>CONNECT WITH US</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
+                </ul>
+
+                <button>SUBSCRIBE TO OUR NEWSLETTER</button>
+            </div>
+
+            <div class="quickLinks">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li>Company</li>
+                    <li>Enterprise</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footBottom">
+            <p>
+&copy; TechBiz 2023 All Rights Reserved. <strong>Privacy Policy</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets\js\services.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+
+    <!-- <script src="js\jquery\jquery-3.6.4.min.js"></script> -->
+    <!-- Auto-typing text. -->
+    <!-- <script src="js/autotype.js"></script> -->
+</body>
+</html>

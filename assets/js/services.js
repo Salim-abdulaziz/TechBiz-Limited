@@ -136,3 +136,22 @@
     //     });
     //   });
       
+
+
+
+
+
+
+
+
+
+
+    //Making the navbar's background change colour on scrolling.
+const navbar = document.getElementById('navBar');
+window.addEventListener('scroll', () =>{
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+    }else{
+        navbar.classList.remove('scrolled');
+    }
+});

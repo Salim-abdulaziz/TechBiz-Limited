@@ -155,3 +155,11 @@ window.addEventListener('scroll', () =>{
         navbar.classList.remove('scrolled');
     }
 });
+
+//Make the shape have a bounce effect
+window.addEventListener("DOMContentLoaded", () => {
+  const shapeContainer = document.getElementById("shape-container");
+  const shape = document.createElement("div");
+  shape.classList.add("shape");
+  shapeContainer.appendChild(shape);
+});

@@ -11,11 +11,16 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
+  --primary-color: #3b56a5;
+  --secondary-color:#ffa500;
+  --accent-color:#ffffffec;
+  --background-color:#f4efe9;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: var(--background-color);
 }
 
 a {
@@ -65,7 +70,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  color:var(--primary-color);
 }
 
 @media (max-width: 768px) {
@@ -80,10 +85,10 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: var(--primary-color);
   min-height: 40px;
   margin-top: 82px;
-  color: #fff;
+  color: var(--accent-color);
 }
 
 @media (max-width: 992px) {
@@ -107,7 +112,7 @@ section {
 }
 
 .breadcrumbs ol a {
-  color: #fff;
+  color:var(--accent-color);
   transition: 0.3s;
 }
 
@@ -179,7 +184,7 @@ section {
 }
 
 .header.header-scrolled {
-  background: black;
+  background: var(--background-color);
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -564,7 +569,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content {
-  background-color: black;
+  background-color: var(--background-color);
   padding: 40px;
 }
 

@@ -175,10 +175,11 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background-color: #111;
 }
 
 .header.header-scrolled {
-  background:black;
+  background: white;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -200,6 +201,23 @@ section {
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
+/*Search Bar*/
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+
+.search-icon {
+  cursor: pointer;
+  background-color: white;
+}
+
+.search-input {
+  display: none;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -232,7 +250,7 @@ section {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #013289;
+  color: orange;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -248,7 +266,7 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #4154f1;
+  color: blue;
 }
 
 .navbar .getstarted,

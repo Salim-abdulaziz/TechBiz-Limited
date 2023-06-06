@@ -17,6 +17,7 @@ header {
 .menu{
     width: 100%;
     z-index: 9999;
+    font-size: 24px;
 }
 header> .logo >img{
     height: 7vh;

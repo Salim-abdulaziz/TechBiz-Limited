@@ -136,3 +136,30 @@
     //     });
     //   });
       
+
+
+
+
+
+
+
+
+
+
+    //Making the navbar's background change colour on scrolling.
+const navbar = document.getElementById('navBar');
+window.addEventListener('scroll', () =>{
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+    }else{
+        navbar.classList.remove('scrolled');
+    }
+});
+
+//Make the shape have a bounce effect
+window.addEventListener("DOMContentLoaded", () => {
+  const shapeContainer = document.getElementById("shape-container");
+  const shape = document.createElement("div");
+  shape.classList.add("shape");
+  shapeContainer.appendChild(shape);
+});

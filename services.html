@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechBiz Services</title>
+    <link rel="icon" type="image/x-icon" href="assets\img\logo-header.png">
     <link rel="stylesheet" href="assets\css\services.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <header id="navBar">
+    <header class="navBar" id="navBar">
         <div class="logo">
         <img src="assets\img\logo-header.png" alt="logo">
 
@@ -36,31 +41,56 @@
 
 
     <main>
-        <section class="intro-hero" id="intro-flip-cards">
-            <h1 class="title">Hover over the cards</h1>
 
-            <div id="app" class="container">
-            <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
-                <h1 slot="header">Canyons</h1>
-                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </card>
-            <card data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-                <h1 slot="header">Beaches</h1>
-                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </card>
-            <card data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-                <h1 slot="header">Trees</h1>
-                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </card>
-            <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
-                <h1 slot="header">Lakes</h1>
-                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </card>
+        
+<section class="hero_1" id ="shape-container">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="hero_text_intro">
+      <h2>Our <span>Services</span></h2>
+      <p>Robust tech solutions for demanding markets.</p>
+    </div>
+    <div id='tagline'>
+        <div class='visible'>
+          <ul>
+            <li>Web Hosting</li>
+            <li>Mobile APP development</li>
+            <li>web development</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+  
+  
+        <section class="intro-hero" id="intro-flip-cards">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card_ card-1">
+                    <h3>Ionic Native</h3>
+                    <p>A curated set of   ES5/ES6/TypeScript wrappers for plugins to easily add any native functionality to your Ionic apps.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card_ card-2">
+                    <h3>UI Components</h3>
+                    <p>Tabs, buttons, inputs, lists, cards, and more! A comprehensive library
+                      of mobile UI components, ready to go.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card_ card-3">
+                    <h3>Theming</h3>
+                    <p>Learn how to easily customize and modify your app’s design to fit your
+                      brand across all mobile platform styles.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-    
         </section>
 
-        <section class="many_cards">
+    <!-- <section class="many_cards">
             <div class="cards">
 
                 <div class="card">
@@ -307,7 +337,7 @@
                 </div>
 
             </div
-        </section>
+        </section> -->
 
 <!-- <section class="my_cards">
     <div class="item1">
@@ -352,10 +382,130 @@
     </div>
 </section> -->
 
-<section>
-    
+<section class="card-transform">
+
+        <div class="container3">
+            <div class="card3">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                        <h3>Design</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                        <h3>Code</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                        <h3>Launch</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                        <h3>Launch</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 </section>
 
+<section class="contact" id="contact">
+    <div class="container-contact">
+        <div class="heading text-center">
+            <h2>Contact
+                <span> Us </span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <br>incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row-contact">
+            <div class="col-md-5">
+                <div class="title">
+                    <h3>Contact detail</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                </div>
+                <div class="content">
+                    <!-- Info-1 -->
+                    <div class="info">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4 class="d-inline-block">PHONE :
+                            <br>
+                            <span>+12457836913 , +12457836913</span></h4>
+                    </div>
+                    <!-- Info-2 -->
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <h4 class="d-inline-block">EMAIL :
+                            <br>
+                            <span>example@info.com</span></h4>
+                    </div>
+                    <!-- Info-3 -->
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 class="d-inline-block">ADDRESS :<br>
+                            <span>6743 last street , Abcd, Xyz</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+
+                <form>
+                    <div class="row-inputs">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn btn-block" type="submit">Send Now!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
     </main>
 
@@ -378,8 +528,15 @@
                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
                 </ul>
-
-                <button>SUBSCRIBE TO OUR NEWSLETTER</button>
+                <div class="wrapper-subscribe">
+                <input type="text" placeholder="Email Address"/>
+                <button> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l14 0"></path>
+                    <path d="M13 18l6 -6"></path>
+                    <path d="M13 6l6 6"></path>
+                </svg></button>
+                </div>
             </div>
 
             <div class="quickLinks">

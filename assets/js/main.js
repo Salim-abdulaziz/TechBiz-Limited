@@ -1,5 +1,5 @@
 /**
-* Template Name: FlexStart
+* Template Name: TechBiz
 * Updated: Mar 10 2023 with Bootstrap v5.2.3
 * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
 * Author: BootstrapMade.com
@@ -293,3 +293,10 @@
   new PureCounter();
 
 })();
+/*search bar script*/
+const searchIcon = document.querySelector('.search-icon');
+const searchInput = document.querySelector('.search-input');
+
+searchIcon.addEventListener('click', function() {
+  searchInput.style.display = 'inline-block';
+});

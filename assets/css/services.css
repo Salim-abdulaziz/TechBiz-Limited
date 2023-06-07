@@ -4,6 +4,7 @@
     margin: 0 0 0 0.1%;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -123,7 +124,7 @@ main{
 /* ----------------------hero_1------------------------------------------------------- */
 .hero_1{
     padding-top: 15vh;
-    height: 45vh;
+    height: 50vh;
     width: 100%;
     background-color: #df6e04;
     position: relative;
@@ -132,7 +133,7 @@ main{
 }
 .hero_text_intro{
     position: absolute;
-    margin-left: 30%;
+    margin-left: 10%;
     flex-shrink: inherit;
 }
 .hero_text_intro> h2{
@@ -151,6 +152,7 @@ main{
     color: #df6e04;
 }
 .hero_text_intro> p{
+    margin-top: 10px;
     position: relative;
     font-weight: 500;
     text-decoration-style: solid;
@@ -322,14 +324,14 @@ main{
 }
 /* --the appearing and dissapearing text under the "services" title-- */
 #tagline {
-    width: 50vh;
+    width: auto;
     font-size: 30px;
     line-height: 40px;
     height: 4vh;
     position: absolute;
     top: 85%;
     margin-top: -25px;
-    margin-left: 30%;
+    margin-left: 45%;
     text-align: center;
     text-transform: capitalize;
     align-items: center;
@@ -337,14 +339,14 @@ main{
 }
 
 #tagline:before {
-    content: '</';
+    content: '{';
     position: absolute;
     left:-30px;
     line-height: 4vh;
 }
 
 #tagline:after {
-    content: '>';
+    content: '}';
     position: absolute;
     right: -30px;
     line-height: 4vh;
@@ -669,7 +671,178 @@ main{
         }
     }
 
+/* ---------------  what we do section------------------------- */
+.what_we_do{
+    align-items: center;
+    margin-top: 6vh;
+    align-content: center;
+    justify-content: center;
+}
+.what_we_do div{
+color: #0212c7;
+position: relative;
+margin-left: 50%;
+}
+.what_we_do p{
+margin-left:20%;
+align-items: center;
+margin-bottom: 5vh;
+}
+/* ---------------  services offered------------------------- */
+.service{
+height: auto;
+background-color: #fffff0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+flex-shrink: 1;
+align-items: center;
+}
+.service .service_image1{
+    border-color: #ff9100;
+    background-color: #1c1a1a7e;
+    border-radius: 10px;
+}
+.service .service_image1 img{
+    height: 30vh;
+    width: fit-content;
+    position: relative;
+    margin-top: 3vh;
+    margin-left: 5vh;
+    border-radius: 10px;
+}
+.service_image1 img:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+.service_text{
+    min-width: 15vh;
+    margin-top: 4vh;
+    margin-right: 10%;
+    background-color: #120441;
+    position: relative;
+    margin-left: 10%;
+    border: 3vh black;
+}
+.service .service_image1 h1{
+    text-transform: uppercase;
+    font-size: 3vh;
+    padding-top: 10px;
+    margin-left: 5vh;
+    color: #0212c7;
+}
+.service .service_text .scrollable_paragraph{
+height: 130px;
+width: 100%;
+overflow: auto;
+margin-right: 10%;
+overflow: auto;
+background-color: #877474;
+color: #ffffff;
+scroll-behavior: smooth;
+}
 
+@media(max-width:850px){
+    .service{
+        flex-direction: column;
+        min-height: none;
+        
+    }
+    .service .service_text .scrollable_paragraph{
+        text-align: left;
+        margin: auto 5vh 3vh 10%;
+        }
+}
+/* ---button in services--- */
+.custom-btn {
+    margin: 20px;
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+.btn-12{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .btn-12 span {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btn-12 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn-12:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+  
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
     /* ============section 2 many_cards======================================================== */
 
@@ -905,7 +1078,7 @@ div.card.show div.flap2 {
     margin: 5vh;
     padding: 0;
     height: auto;
-    background: #fff;
+    background: #fffff0;
     justify-content: center;
     align-items: center;
     font-family: consolas;

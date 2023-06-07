@@ -478,12 +478,12 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: black;
+  color: navy;
   font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
 }
 
 .hero h2 {
-  color: #444444;
+  color:navy;
   margin: 15px 0 0 0;
   font-size: 26px;
 }
@@ -494,13 +494,13 @@ section {
   padding: 15px 40px;
   border-radius: 4px;
   transition: 0.5s;
-  color: #fff;
-  background: #4154f1;
+  color:navy;
+  background: white;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
 .hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -642,6 +642,8 @@ section {
   text-align: center;
   transition: 0.3s;
   height: 100%;
+  background-color: #f4efe9;
+  
 }
 
 .values .box img {
@@ -650,9 +652,9 @@ section {
   transform: scale(1.1);
 }
 
-.values .box h3 {
+.values .box h3  {
   font-size: 24px;
-  color: #012970;
+  color: navy;
   font-weight: 700;
   margin-bottom: 18px;
 }

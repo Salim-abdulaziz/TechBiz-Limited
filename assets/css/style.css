@@ -840,6 +840,7 @@ section {
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+  color: navy;
 }
 
 .services .service-box .icon {
@@ -854,7 +855,7 @@ section {
 }
 
 .services .service-box h3 {
-  color: #444444;
+  color: navy;
   font-weight: 700;
 }
 
@@ -874,33 +875,79 @@ section {
 }
 
 .services .service-box.blue {
-  border-bottom: 3px solid #2db6fa;
+  border-bottom: 3px solid navy;
 }
 
 .services .service-box.blue .icon {
-  color: #2db6fa;
-  background: #dbf3fe;
+  color: navy;
+  background: #FFFDD0;
+}
+.services .service-box.blue .icon:hover{
+  color: orange;
 }
 
-.services .service-box.blue .read-more {
-  color: #2db6fa;
+.services .service-box.blue .nav-link-to {
+  color: #FFFDD0;
+  margin-top: 2px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: navy;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
+}
+.services .service-box.blue .nav-link-to:hover{
+  color: orange;
+  margin-top: 2px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: white;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
+
 }
 
 .services .service-box.blue:hover {
-  background: #2db6fa;
+  background: orange;
+  border-bottom: 3px solid orange;
 }
 
 .services .service-box.orange {
-  border-bottom: 3px solid #f68c09;
+  border-bottom: 3px solid navy;
 }
 
 .services .service-box.orange .icon {
+  color: #000080 ;
+  background: #FFFDD0;
+}
+.services .service-box.orange .icon:hover{
   color: #f68c09;
-  background: #fde3c4;
 }
 
 .services .service-box.orange .read-more {
-  color: #f68c09;
+  color: #FFFDD0;
+  margin-top: 1px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: navy;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
+}
+.services .service-box.orange .read-more:hover{
+  color: orange;
+  margin-top: 2px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: white;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
 }
 
 .services .service-box.orange:hover {
@@ -908,20 +955,35 @@ section {
 }
 
 .services .service-box.green {
-  border-bottom: 3px solid #08da4e;
+  border-bottom: 3px solid navy;
 }
 
 .services .service-box.green .icon {
-  color: #08da4e;
-  background: #cffddf;
+  color: navy;
+  background: #FFFDD0;
 }
 
 .services .service-box.green .read-more {
-  color: #08da4e;
+  color: #FFFDD0;
+  margin-top: 1px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: navy;
+  
 }
 
 .services .service-box.green:hover {
-  background: #08da4e;
+  color: orange;
+  margin-top: 2px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: white;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
 }
 
 .services .service-box.red {

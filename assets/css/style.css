@@ -42,6 +42,75 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
+/* ---------    LOADER------------ */
+.loader-section{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  position: fixed;
+  display: flex;
+  z-index: 10000000;
+  background-color: #012970;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+.loader{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring{
+  width: 200px;
+  height: 200px;
+  border: 0px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+}
+.ring:nth-child(1){
+  border-bottom-width: 7px;
+  border-color: #0715b6;
+  animation: rotate1 1s linear infinite;
+}
+.ring:nth-child(2){
+  border-right-width: 4px;
+  border-color: #94c3d5;
+  animation: rotate2 1s linear infinite;
+}
+.ring:nth-child(3){
+  border-top-width: 9px;
+  border-color: #dcc306;
+  animation: rotate3 1s linear infinite;
+}
+.loading{
+  color: #dcc306;
+}
+@keyframes rotate1{
+  0%{
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100%{
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate2{
+  0%{
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100%{
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate3{
+  0%{
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100%{
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+/* ------- - ---------------------- - - -   - - - - - */
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -56,7 +125,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
@@ -67,7 +136,7 @@ section {
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 38px;
+  font-size: 28px;
   line-height: 42px;
   font-weight: 700;
   color:var(--primary-color);
@@ -637,6 +706,7 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
+
 .values .box {
   padding: 30px;
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
@@ -651,6 +721,8 @@ section {
   padding: 30px 50px;
   transition: 0.5s;
   transform: scale(1.1);
+  border-radius: 100px;
+  height: 35vh;
 }
 
 .values .box h3  {
@@ -680,7 +752,7 @@ section {
   align-items: center;
   padding: 30px;
   width: 100%;
-  background: #fff;
+  background: #fffff0;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
 
@@ -690,7 +762,12 @@ section {
   margin-right: 20px;
   color: #4154f1;
 }
-
+.counts .count-box .span{
+  white-space: nowrap;
+  display: flex;
+  color: #0b198f;
+  font-size: 38px;
+}
 .counts .count-box span {
   font-size: 36px;
   display: block;

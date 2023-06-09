@@ -5,6 +5,16 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+//------------Loader---REMOVES THE LOADER ONCE THE PAGE COMPLETES LOADING--------------
+window.addEventListener("DOMContentLoaded", function() {
+    var loader = document.querySelector(".loader-section");
+  
+    setTimeout(function() {
+      loader.style.display="none"; 
+    }, 500); // Adjust the timeout value as needed
+  });
+  //-------------END OF LOADER-------------
+
 (function() {
   "use strict";
 
@@ -128,7 +138,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {

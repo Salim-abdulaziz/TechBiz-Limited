@@ -50,7 +50,7 @@ h6 {
   position: fixed;
   display: flex;
   z-index: 10000000;
-  background-color: #012970;
+  background-color: #05204e;
   top: 0;
   justify-content: center;
   align-items: center;
@@ -751,6 +751,7 @@ section {
   display: flex;
   align-items: center;
   padding: 30px;
+  border-radius: 10px;
   width: 100%;
   background: #fffff0;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
@@ -762,11 +763,17 @@ section {
   margin-right: 20px;
   color: #4154f1;
 }
+.counts .count-box img{
+  height: 7vh;
+  border-radius: 10%;
+  margin-right: 2vh;
+}
 .counts .count-box .span{
   white-space: nowrap;
-  display: flex;
+  justify-content: center;
+  display:flex;
   color: #0b198f;
-  font-size: 38px;
+  font-size: 35px;
 }
 .counts .count-box span {
   font-size: 36px;
@@ -780,6 +787,22 @@ section {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
+}
+/* --hover on the counters- */
+.col-lg-3.col-md-6{
+  display: inline;
+  border: none;
+  cursor: pointer;
+  margin: 0px 0px 15px;
+  min-width: 150px;
+}
+.col-md-6::before {
+  top: 0; bottom: 0; right: 0; 
+  height: 100%; width: 0%;
+}
+.col-md-6:hover::before {
+  width: 100%;
+  color: red;
 }
 
 /*--------------------------------------------------------------
@@ -960,7 +983,7 @@ section {
   background: #FFFDD0;
 }
 .services .service-box.blue .icon:hover{
-  color: orange;
+  color: #ffa500;
 }
 
 .services .service-box.blue .nav-link-to {
@@ -975,7 +998,7 @@ section {
   text-transform: uppercase;
 }
 .services .service-box.blue .nav-link-to:hover{
-  color: orange;
+  color: #ffa500;
   margin-top: 2px;
   line-height: 0;
   padding: 15px 40px;
@@ -988,7 +1011,7 @@ section {
 }
 
 .services .service-box.blue:hover {
-  background: orange;
+  background: #ffa500;
   border-bottom: 3px solid orange;
 }
 
@@ -1016,13 +1039,13 @@ section {
   text-transform: uppercase;
 }
 .services .service-box.orange .read-more:hover{
-  color: orange;
+  color: #ffa500;
   margin-top: 2px;
   line-height: 0;
   padding: 15px 40px;
   border-radius: 30px;
   transition: 0.5s;
-  background: white;
+  background: #ffffff;
   box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
 }
@@ -1052,7 +1075,7 @@ section {
 }
 
 .services .service-box.green:hover {
-  color: orange;
+  color: #ffa500;
   margin-top: 2px;
   line-height: 0;
   padding: 15px 40px;
@@ -1064,54 +1087,54 @@ section {
 }
 
 .services .service-box.red {
-  border-bottom: 3px solid #e9222c;
+  border-bottom: 3px solid  #ffa500;
 }
 
 .services .service-box.red .icon {
-  color: #e9222c;
+  color: #ffa500;
   background: #fef7f8;
 }
 
 .services .service-box.red .read-more {
-  color: #e9222c;
+  color:  #ffa500;
 }
 
 .services .service-box.red:hover {
-  background: #e9222c;
+  background: #ffa500;
 }
 
 .services .service-box.purple {
-  border-bottom: 3px solid #b50edf;
+  border-bottom: 3px solid  #ffa500;
 }
 
 .services .service-box.purple .icon {
-  color: #b50edf;
+  color:  #ffa500;
   background: #f8e4fd;
 }
 
 .services .service-box.purple .read-more {
-  color: #b50edf;
+  color:  #ffa500;
 }
 
 .services .service-box.purple:hover {
-  background: #b50edf;
+  background: #ffa500;
 }
 
 .services .service-box.pink {
-  border-bottom: 3px solid #f51f9c;
+  border-bottom: 3px solid  #ffa500;
 }
 
 .services .service-box.pink .icon {
-  color: #f51f9c;
+  color:  #ffa500;
   background: #feecf7;
 }
 
 .services .service-box.pink .read-more {
-  color: #f51f9c;
+  color:  #ffa500;
 }
 
 .services .service-box.pink:hover {
-  background: #f51f9c;
+  background: #ffa500;
 }
 
 .services .service-box:hover h3,
@@ -1239,6 +1262,10 @@ section {
   text-align: left;
 }
 
+.faq .accordion-button p{
+  margin-left: 5px;
+}
+
 .faq .accordion-button:focus {
   box-shadow: none;
 }
@@ -1252,6 +1279,9 @@ section {
 .faq .accordion-body {
   padding: 0 0 25px 0;
   border: 0;
+}
+.faq .accordion-body p{
+  margin-left: 10px;
 }
 
 /*--------------------------------------------------------------

@@ -283,14 +283,14 @@ section {
   
 }
 
-.search-icon {
+/* .search-icon {
   cursor: pointer;
   background-color: white;
 }
 
 .search-input {
   display: none;
-}
+} */
 
 
 /*--------------------------------------------------------------
@@ -324,7 +324,7 @@ section {
   font-family: "Nunito", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: orange;
+  color: #0606b8;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -340,7 +340,7 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: blue;
+  color: var(--secondary-color);
 }
 
 .navbar .getstarted,
@@ -656,6 +656,12 @@ section {
 .about .content {
   background-color: var(--background-color);
   padding: 40px;
+  box-shadow: 0px 0 5px #00008046;
+  width: 90%;
+  transition: 0.3s;
+}
+.about .content:hover{
+  box-shadow: 0px 0 5px #ddddea46;
 }
 
 .about h3 {
@@ -679,7 +685,7 @@ section {
 .about .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
-  border-radius: 4px;
+  border-radius: 10px;
   transition: 0.5s;
   color: #fff;
   background: #4154f1;
@@ -698,6 +704,20 @@ section {
   font-size: 18px;
   transition: 0.3s;
 }
+.img-fluid{
+  border-radius: 20px;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 5px 25px #4154f14d;
+  transition: 0.5s;
+}
+.img-fluid:hover{
+  box-shadow: 0px 5px 25px #4153f166;
+  transform:scale(0.8);
+}
+
 
 .about .btn-read-more:hover i {
   transform: translateX(5px);
@@ -709,23 +729,29 @@ section {
 
 .values .box {
   padding: 30px;
-  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 0 5px #00008046;
   text-align: center;
   transition: 0.3s;
   height: 100%;
   background-color: #f4efe9;
-  
+  border-radius: 10px;
 }
 
 .values .box img {
-  padding: 30px 50px;
+  padding: 10px 10px;
   transition: 0.5s;
   transform: scale(1.1);
-  border-radius: 100px;
-  height: 35vh;
+  border-radius: 50px;
+  width: 60%;
+  height: auto;
+  max-width: 30vh;
+  max-height: 28vh;
+  background-color: #fffff0;
+  box-shadow: 0px 0 10px #000080;
 }
 
 .values .box h3  {
+  padding-top: 15px;
   font-size: 24px;
   color: navy;
   font-weight: 700;
@@ -733,7 +759,7 @@ section {
 }
 
 .values .box:hover {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 0 30px #01297014;
 }
 
 .values .box:hover img {
@@ -780,6 +806,7 @@ section {
   display: block;
   font-weight: 600;
   color: #0b198f;
+  transition: 0.2s;
 }
 
 .counts .count-box p {
@@ -796,13 +823,23 @@ section {
   margin: 0px 0px 15px;
   min-width: 150px;
 }
-.col-md-6::before {
-  top: 0; bottom: 0; right: 0; 
-  height: 100%; width: 0%;
+.col-lg-3.col-md-6 .count-box{
+  transition: 0.2s;
+  background-color: #fffff0;
+  color: #0013e0;
+  display: inline-block;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px 25px;
+  border-radius: 5px;
+  box-shadow: inset 0 -5px #0a02a8;
+  transition: .25s;
 }
-.col-md-6:hover::before {
-  width: 100%;
-  color: red;
+
+.col-lg-3.col-md-6 .count-box:hover{
+  box-shadow: inset 0 -300px #d7c20168, 0 30px 20px black;
+  color: #090469;
+  transform: scale(1.05);
 }
 
 /*--------------------------------------------------------------
@@ -1181,7 +1218,7 @@ section {
   border-radius: 30px;
   transition: 0.5s;
   background: navy;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  box-shadow: 0px 5px 30px #051df066;
   text-transform: uppercase;
 }
 
@@ -1317,6 +1354,13 @@ section {
   border: 0;
 }
 
+.faq .accordion-item{
+  margin-bottom: 1vh;
+  border-width: 10px;
+  border-color: #0000804f;
+  box-shadow: 0px 5px 20px #051df07a;
+  border-radius: 10px;
+}
 .faq .accordion-button {
   padding: 15px 15px 20px 0;
   font-weight: 600;
@@ -1324,6 +1368,7 @@ section {
   font-size: 18px;
   color: #444444;
   text-align: left;
+  border-radius: 10px;
 }
 
 .faq .accordion-button p{
@@ -1873,6 +1918,7 @@ section {
   color: #444444;
   background: #fafbff;
   padding: 30px;
+  border-radius: 10px;
 }
 
 .contact .info-box i {
@@ -1899,6 +1945,7 @@ section {
   background: #fafbff;
   padding: 30px;
   height: 100%;
+  border-radius: 10px;
 }
 
 .contact .php-email-form .error-message {
@@ -1943,7 +1990,7 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: none;
   font-size: 14px;
   border-radius: 0;
@@ -1956,10 +2003,12 @@ section {
 
 .contact .php-email-form input {
   padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .contact .php-email-form textarea {
   padding: 12px 15px;
+  border-radius: 10px;
 }
 
 .contact .php-email-form button[type=submit] {

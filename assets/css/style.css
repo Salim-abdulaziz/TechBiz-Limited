@@ -1062,6 +1062,9 @@ section {
   color: navy;
   background: #FFFDD0;
 }
+.services .service-box.green .icon:hover{
+  color: #ffa500;
+}
 
 .services .service-box.green .read-more {
   color: #FFFDD0;
@@ -1071,6 +1074,8 @@ section {
   border-radius: 30px;
   transition: 0.5s;
   background: navy;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
   
 }
 
@@ -1087,54 +1092,113 @@ section {
 }
 
 .services .service-box.red {
-  border-bottom: 3px solid  #ffa500;
+  border-bottom: 3px solid  navy;
 }
 
 .services .service-box.red .icon {
-  color: #ffa500;
-  background: #fef7f8;
+  color: navy;
+  background: #fffdd0;
 }
 
 .services .service-box.red .read-more {
-  color:  #ffa500;
+  color: #FFFDD0;
+  margin-top: 1px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: navy;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
 }
+
 
 .services .service-box.red:hover {
   background: #ffa500;
 }
+.services .service-box.red .read-more:hover{
+  color: #ffa500;
+  margin-top: 2px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: white;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
+}
 
 .services .service-box.purple {
-  border-bottom: 3px solid  #ffa500;
+  border-bottom: 3px solid  navy;
 }
 
 .services .service-box.purple .icon {
-  color:  #ffa500;
-  background: #f8e4fd;
+  color:  navy;
+  background: #fffdd0;
 }
 
 .services .service-box.purple .read-more {
-  color:  #ffa500;
+  color: #FFFDD0;
+  margin-top: 1px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: navy;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
 }
 
 .services .service-box.purple:hover {
   background: #ffa500;
 }
+.services .service-box.service-box.purple .read-more:hover{
+  color: #ffa500;
+  margin-top: 2px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: white;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
+}
 
 .services .service-box.pink {
-  border-bottom: 3px solid  #ffa500;
+  border-bottom: 3px solid  navy;
 }
 
 .services .service-box.pink .icon {
-  color:  #ffa500;
-  background: #feecf7;
+  color:  navy;
+  background: #FFFDD0;
 }
 
 .services .service-box.pink .read-more {
-  color:  #ffa500;
+  color: #FFFDD0;
+  margin-top: 1px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: navy;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
 }
+
 
 .services .service-box.pink:hover {
   background: #ffa500;
+}
+.services .service-box.pink .read-more:hover{
+  color: #ffa500;
+  margin-top: 2px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  background: white;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
+  text-transform: uppercase;
 }
 
 .services .service-box:hover h3,

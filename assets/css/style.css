@@ -1117,6 +1117,10 @@ section {
 }
 
 .services .service-box.green:hover {
+  background: #f68c09;
+}
+
+.services .service-box.green .read-more:hover {
   color: #ffa500;
   margin-top: 2px;
   line-height: 0;

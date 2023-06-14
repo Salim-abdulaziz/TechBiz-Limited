@@ -1140,6 +1140,9 @@ section {
   color: navy;
   background: #fffdd0;
 }
+.services .service-box.red .icon:hover{
+  color: #ffa500;
+}
 
 .services .service-box.red .read-more {
   color: #FFFDD0;
@@ -1177,6 +1180,9 @@ section {
   color:  navy;
   background: #fffdd0;
 }
+.services .service-box.purple .icon:hover{
+  color:orange;
+}
 
 .services .service-box.purple .read-more {
   color: #FFFDD0;
@@ -1212,6 +1218,9 @@ section {
 .services .service-box.pink .icon {
   color:  navy;
   background: #FFFDD0;
+}
+.services .service-box.pink .icon:hover{
+  color:orange;
 }
 
 .services .service-box.pink .read-more {
@@ -2550,14 +2559,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
+  background: var(--background-color);
   padding: 0 0 30px 0;
   font-size: 14px;
 }
 
 .footer .footer-newsletter {
   padding: 50px 0;
-  background: #f6f9ff;
+  background: var(--background-color);
   border-top: 1px solid #e1ecff;
 }
 
@@ -2572,7 +2581,7 @@ section {
 
 .footer .footer-newsletter form {
   margin-top: 20px;
-  background: #fff;
+  background: var(--background-color);
   padding: 6px 10px;
   position: relative;
   border-radius: 40px;
@@ -2628,7 +2637,7 @@ section {
 }
 
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
+  max-height: 80px;
   margin-right: 6px;
 }
 

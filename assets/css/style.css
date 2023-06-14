@@ -443,6 +443,7 @@ section {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    transition: 0.5s;
   }
 
   .navbar ul {
@@ -473,12 +474,13 @@ section {
   top: 55px;
   right: 15px;
   bottom: 15px;
-  left: 15px;
+  left: 60%;
   padding: 10px 0;
   border-radius: 10px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  height: 50%;
 }
 
 .navbar-mobile a,

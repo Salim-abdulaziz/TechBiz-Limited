@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
-  --primary-color: #3b56a5;
+  --primary-color: navy;
   --secondary-color:#ffa500;
   --accent-color:#ffffffec;
   --background-color:#f4efe9;
@@ -24,12 +24,12 @@ body {
 }
 
 a {
-  color: #4154f1;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -210,7 +210,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background:var(--primary-color);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -224,7 +224,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: #6776f4;
+  background: var(--secondary-color);
   color: #fff;
 }
 
@@ -249,21 +249,24 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background-color: white;
+  background-color: transparent;
 }
 
 .header.header-scrolled {
   background: var(--background-color);
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+ 
+ 
 }
 
 .header .logo {
   line-height: 0;
+
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -324,7 +327,7 @@ section {
   font-family: "Nunito", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #0606b8;
+  color:var(--primary-color);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -341,6 +344,24 @@ section {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 2px;
+  width: 0;
+  height: 3px;
+  background-color: orange;
+  transition: 0.3s ease;
+}
+.navbar a:hover::after,
+.navbar a:focus::after
+ {
+  width: 100%;
 }
 
 .navbar .getstarted,
@@ -443,7 +464,6 @@ section {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
-    transition: 0.5s;
   }
 
   .navbar ul {
@@ -474,13 +494,12 @@ section {
   top: 55px;
   right: 15px;
   bottom: 15px;
-  left: 60%;
+  left: 15px;
   padding: 10px 0;
   border-radius: 10px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
-  height: 50%;
 }
 
 .navbar-mobile a,
@@ -2018,7 +2037,7 @@ section {
 
 .contact .php-email-form input {
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 40px;
 }
 
 .contact .php-email-form textarea {
@@ -2027,16 +2046,16 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #4154f1;
+  background: navy;
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 40px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
+  background: orange;
 }
 
 @keyframes animate-loading {
@@ -2594,6 +2613,7 @@ section {
   border: 0;
   padding: 8px;
   width: calc(100% - 140px);
+  border-radius: 40px;
 }
 
 .footer .footer-newsletter form input[type=submit] {
@@ -2613,8 +2633,11 @@ section {
 }
 
 .footer .footer-newsletter form input[type=submit]:hover {
-  background: #5969f3;
+  background: orange;
+  color:orange;
+  border-radius: 40px;
 }
+
 
 .footer .footer-top {
   background-size: contain;

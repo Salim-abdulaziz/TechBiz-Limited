@@ -908,6 +908,57 @@ height: 10px;
   transform: translateX(5px);
 }
 
+
+/*--------------------------------------------------------------
+# mission & vision
+--------------------------------------------------------------*/
+.mission .content {
+  background-color: var(--background-color);
+  padding: 40px;
+  box-shadow: 0px 0 5px #00008046;
+  width: 90%;
+  transition: 0.3s;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.mission .content:hover{
+  box-shadow: 0px 0 5px ;
+}
+.mission h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+.mission h2{
+  font-size: 18px;
+  font-weight: 700;
+  color: #012970;
+}
+.mission_vision{
+  border-radius: 20px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 5px 25px #4154f14d;
+  transition: 0.5s;
+}
+.mission-section,
+.vision-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px; /* Adjust the spacing between sections */
+}
+
+.logo {
+  width: 100px; /* Set the desired width for your logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjust the spacing between the logo and content */
+}
+
+
+
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
@@ -1222,9 +1273,16 @@ color: #fafafa;
 }
 
 .features .feature-icons h3 {
-  color: #012970;
+  color: #4154f1;
   font-weight: 700;
   font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.features .feature-icons h2{
+  color: #012970 ;
+  font-weight: 700;
+  font-size: 22px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -2324,7 +2382,7 @@ color: #fafafa;
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444444;
-  background: #fafbff;
+  background: var(--background-color);
   padding: 30px;
   border-radius: 40px;
 }
@@ -2350,7 +2408,7 @@ color: #fafafa;
 }
 
 .contact .php-email-form {
-  background: #fafbff;
+  background: var(--background-color);
   padding: 30px;
   height: 100%;
   border-radius: 10px;

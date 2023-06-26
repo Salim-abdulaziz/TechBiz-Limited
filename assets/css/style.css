@@ -125,7 +125,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 17px;
+  font-size: 27px;
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
@@ -409,19 +409,20 @@ height: 10px;
 .navbar .active:focus,
 .navbar li:hover>a {
   color: var(--secondary-color);
-  text-decoration: underline;
 }
 
 .navbar a::after {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 0;
+  left: 0px;
+  top: 40px;
   bottom: 2px;
   width: 0;
   height: 3px;
   background-color: orange;
   transition: 0.3s ease;
+  margin-left: 30px;
+  max-width: 75%;
 }
 .navbar a:hover::after,
 .navbar a:focus::after
@@ -623,27 +624,69 @@ height: 10px;
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  height: 100vh;
-  /* background: linear-gradient(90deg, #ffcb0d 0%, #fffffffe 50%, #250de0fe 100%) top center no-repeat; */
-  background-size: cover;
+ padding: 0;
+ margin: 0;
 }
 
-.hero h1 {
-  margin: 0;
-  font-size: 58px;
+.carousel h1 {
+  margin: 35% 0 0 100px;
+  font-size: 50px;
   font-weight: 700;
   color: navy;
   font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
 }
 
-.hero h2 {
+.carousel h2 {
   color:navy;
-  margin: 15px 0 0 0;
-  font-size: 24px;
+  margin: 10px 0 0 100px;
+  font-size: 26px;
+}
+#hero-intro1> h1 {
+  margin: 35% 0 0 100px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
+  text-shadow: 4px 4px 8px #070012c9;
+}
+#hero-intro1> h2 {
+  color:#ffffff;
+  margin: 10px 0 0 100px;
+  font-size: 26px;
+  text-shadow: 4px 4px 8px #070012c9;
 }
 
-.hero .btn-get-started {
+#hero-intro2> h1 {
+  margin: 35% 0 0 100px;
+  font-size: 50px;
+  font-weight: 700;
+  color:#f1f1f7;
+  font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
+  text-shadow: 4px 4px 8px #070012c9;
+}
+#hero-intro2> h2 {
+  color:#f1f1f7;
+  margin: 10px 0 0 100px;
+  font-size: 236x;
+  text-shadow: 4px 4px 8px #070012c9;
+}
+
+#hero-intro3> h1 {
+  margin: 35% 0 0 100px;
+  font-size: 50px;
+  font-weight: 700;
+  color:#f1f1f7;
+  font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
+  text-shadow: 4px 4px 8px #070012c9;
+}
+#hero-intro3> h2 {
+  color:#f1f1f7;
+  margin: 10px 0 0 100px;
+  font-size: 24px;
+  text-shadow: 4px 4px 8px #070012c9;
+}
+
+/* .hero .btn-get-started {
   margin-top: 30px;
   line-height: 0;
   padding: 15px 40px;
@@ -652,8 +695,8 @@ height: 10px;
   color:navy;
   background: white;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-}
-
+} */
+/* 
 .hero .btn-get-started span {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 600;
@@ -670,12 +713,21 @@ height: 10px;
 
 .hero .btn-get-started:hover i {
   transform: translateX(5px);
-}
+} */
 
 #hero-intro{
   z-index: 2;
 }
-.hero .hero-img{
+#hero-intro1{
+  z-index: 2;
+}
+#hero-intro2{
+  z-index: 2;
+}
+#hero-intro3{
+  z-index: 2;
+}
+.slide .container .hero-img{
   top: 0;
   left: 0;
   width: 100%;
@@ -683,13 +735,13 @@ height: 10px;
   height: 100%;
   overflow: hidden;
 }
-.hero .hero-img img{
+.slide .container  .hero-img img{
   text-align: right;
   background-size: contain;
   aspect-ratio: 1;
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.9;
   overflow: hidden;
 }
 
@@ -732,7 +784,133 @@ height: 10px;
     width: 100%;
   }
 }
+/* #####################heroslider ################## */
 
+.carousel {
+  height: 75vh;
+  margin: 0;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+.slider {
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100%;
+}
+
+.slide_viewer {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background: transparent;
+}
+
+.slide:nth-of-type(2) {
+  background: transparent;
+}
+
+.slide:nth-of-type(3) {
+  background: transparent;
+}
+
+.slide:nth-of-type(4) {
+  background: transparent;
+}
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  bottom: 50px;
+  background-color: transparent;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  bottom: 400px;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+}
+/* ########## END OF HERO SLIDER################################################ */
 /*--------------------------------------------------------------
 # Index Page
 --------------------------------------------------------------*/
@@ -815,50 +993,80 @@ height: 10px;
 /*--------------------------------------------------------------
 # mission & vision
 --------------------------------------------------------------*/
-.mission .content {
+
+.vision-mission {
   background-color: var(--background-color);
-  padding: 40px;
-  box-shadow: 0px 0 5px #00008046;
-  width: 90%;
-  transition: 0.3s;
-  font-size: 20px;
-  border-radius: 20px;
-}
-.mission .content:hover{
-  box-shadow: 0px 0 5px ;
-}
-.mission h3 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #4154f1;
-  text-transform: uppercase;
-}
-.mission h2{
-  font-size: 18px;
-  font-weight: 700;
-  color: #012970;
-}
-.mission_vision{
-  border-radius: 20px;
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0px 5px 25px #4154f14d;
-  transition: 0.5s;
-}
-.mission-section,
-.vision-section {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px; /* Adjust the spacing between sections */
+  padding: 10px 0;
+  text-align: center;
+  min-height: 35vh;
 }
 
-.logo {
-  width: 100px; /* Set the desired width for your logo */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Adjust the spacing between the logo and content */
+.vision-mission .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: var(--background-color);
 }
+
+.vision-mission .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.vision-mission .col {
+  display: flex;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+.vision-mission .col img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.vision-mission .col> div{
+  margin-top: 10vh;
+}
+.vision-mission .col .mission-content{
+  margin-top: 4.5vh;
+}
+.vision-mission .col h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  color: navy;
+  text-transform: capitalize;
+}
+
+.vision-mission .col p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: navy;
+}
+@media (max-width: 768px) {
+  .vision-mission .row {
+    flex-direction: column;
+  }
+  .vision-mission .col{
+    flex-direction: column;
+    align-items: center;
+  }
+  .vision-mission .col img{
+    height: 14vh;
+    min-width: max-content;
+  }
+  .vision-mission .col> div{
+    margin-top: 4px;
+  }
+  .vision-mission .col p{
+    font-size: 16px;
+    justify-content: left;
+  }
+}
+
+
+
 
 
 
@@ -916,7 +1124,7 @@ height: 10px;
 .counts .count-box {
   display: flex;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0px 5px;
   border-radius: 10px;
   width: 100%;
   background: #fffff0;
@@ -980,7 +1188,7 @@ height: 10px;
 }
 
 .col-lg-3.col-md-6 .count-box:hover{
-  box-shadow: inset 0 -300px var(--secondary-color), 0 30px 20px black;
+  box-shadow: inset 0 -300px #ffa6007f, 0 30px 20px black;
   color: #090469;
   transform: scale(1.05);
 }
@@ -1110,7 +1318,7 @@ width: 100%;
 .features .feature-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
-  height: 14vh;
+  height: 15vh;
   display: flex;
   border-radius: 10px;
   /* flex-direction: column; */
@@ -1231,12 +1439,15 @@ width: 100%;
   font-size: 22px;
   margin-bottom: 20px;
   text-align: center;
+  justify-content: center;
 }
 
-.features .row2 .col-xl-4 img{
-  height: 30vh;
+.features .row2 .row{
+  height: 60vh;
   width: fit-content;
   object-fit: contain;
+
+  margin-left: 20%;
 }
 
 @media (max-width: 768px) {
@@ -1261,6 +1472,7 @@ width: 100%;
   line-height: 44px;
   color: #0245bc;
   margin-right: 15px;
+  justify-content: center;
 }
 
 .features .feature-icons .content .icon-box p {
@@ -1283,7 +1495,8 @@ width: 100%;
   border-radius: 50%;
   animation: bounceAndRoll 10s ease-in-out infinite;
   animation-fill-mode: forwards;
-  opacity: 1;
+  opacity: 0;
+  animation-delay: 16.1s; 
 }
 @keyframes bounceAndRoll {
   0% {
@@ -1338,14 +1551,16 @@ width: 100%;
   border-radius: 50%;
   animation: bounceAndRoll2 20s ease-in-out infinite;
   animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 16.1s; 
 }
 @keyframes bounceAndRoll2 {
-  0% {
-      top: 25%;
-      left: -3%;
-      transform: scale(1) rotate(0deg);
-      opacity: 0.6;
-  }
+0% {
+    top: 25%;
+    left: -3%;
+    transform: scale(1) rotate(0deg);
+    opacity: 0.6;
+}
 
   25% {
       top: 75%;
@@ -1403,6 +1618,9 @@ width: 100%;
 .services .service-box h3 {
   color: navy;
   font-weight: 700;
+}
+.services .service-box :hover{
+  color: navy;
 }
 
 .services .service-box .read-more {
@@ -1497,7 +1715,8 @@ width: 100%;
 }
 
 .services .service-box.orange:hover {
-  background: #f68c09;
+  background: orange;
+  color: orange;
 }
 
 .services .service-box.green {
@@ -1524,7 +1743,9 @@ width: 100%;
   text-transform: uppercase;
   
 }
-
+.services .service-box:hover{
+  transform: scale(1.1);
+}
 .services .service-box.green:hover {
   background: #f68c09;
 }

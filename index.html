@@ -30,7 +30,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!-- =======================================================
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
   * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
@@ -54,7 +54,7 @@
         <li><i class="bi bi-telephone"></i><a href="tel:+254711377232">+254 711377232</a></li>
         <li><i class="bi bi-envelope"></i><a href="mailto:info@techbizafrica.com">info@techbizafrica.com</a></li>
         <li><i class="bi bi-map"></i>Kizingo- Kaunda Avenue, Mombasa - Kenya.</li>
-        <li><i class="i bi-clock"></i>Mon - Fri: 8:30am-5:00pm, Sat: 9:00am-12:30pm.</li>
+        <!-- <li><i class="i bi-clock"></i>Mon - Fri: 8:30am-5:00pm, Sat: 9:00am-12:30pm.</li> -->
       </ul>
     </div>
 
@@ -71,14 +71,14 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Who we are</a></li>
-          <li><a class="nav-link scrollto" href="#features">Technologies</a></li>
-          <li><a href="#" onclick="scrollToElement(document.getElementById('we_serve))">Who we serve</a></li>     
+          <!-- <li><a class="nav-link scrollto" href="#about">Who we are</a></li>
+          <li><a class="nav-link scrollto" href="#features">Technologies</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#" >Who we serve</a></li>      -->
           <!-- <li><a class="nav-link scrollto" href="#counts">Analytics</a></li> -->
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#clients">Partners</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#clients">Partners</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Quick links</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Consultation</a></li>
               <li class="dropdown"><a href="#"><span>Our Services</span> <i class="bi bi-chevron-right"></i></a>
@@ -95,7 +95,7 @@
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
-          </li> -->
+          </li>
           <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -111,33 +111,230 @@
   <section id="hero" class="hero d-flex align-items-center shape-container">
       <div class="shape"></div>
       <div class="shape"></div>
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center" id="hero-intro">
+        <div class="col-lg-6 d-flex flex-column justify-content-center" >
           <h1 data-aos="fade-up">
             Elevate Your Business 
           <br>to the Digital Frontier</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Empowering businesses to transcend boundaries, reimagine possibilities, and achieve digital success.</h2>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-start">
+          <!-- <div data-aos="fade-up" data-aos-delay="600"> -->
+            <!-- <div class="text-center text-lg-start">
               <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>CONTACT US TODAY</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="https://images.unsplash.com/photo-1636955816868-fcb881e57954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHNvZnR3YXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
           <!-- <img src="assets/img/hero-img.png" class="img-fluid" alt=""> -->
+        <!-- </div>
+      </div>
+    </div> -->
+
+  <!-- </section> -->
+  <!-- End Hero -->
+
+  <!-- #######slider hero section############ -->
+<!-- <section class="carousel"> -->
+<div class="carousel">
+  <div class="slider">
+    <div class="slide_viewer">
+      <div class="slide_group">
+        <div class="slide">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 d-flex flex-column justify-content-center" id="hero-intro">
+                <h1 data-aos="fade-up">
+                  Elevate Your Business 
+                <br>to the Digital Frontier</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">Empowering businesses to transcend boundaries, reimagine possibilities, and achieve digital success.</h2>
+                <!-- <div data-aos="fade-up" data-aos-delay="600">
+                  <div class="text-center text-lg-start">
+                    <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                      <span>CONTACT US TODAY</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+              <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1636955816868-fcb881e57954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHNvZnR3YXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+                <!-- <img src="assets/img/hero-img.png" class="img-fluid" alt=""> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="slide">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 d-flex flex-column justify-content-center" id="hero-intro1">
+                <h1 data-aos="fade-up">
+                  Automation Iot and AI
+                </h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">Empowering businesses to transcend boundaries, reimagine possibilities, and achieve digital success.</h2>
+                <!-- <div data-aos="fade-up" data-aos-delay="600">
+                  <div class="text-center text-lg-start">
+                    <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                      <span>CONTACT US TODAY</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+              <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src="assets/img/robot.jpg" alt="">
+                <!-- <img src="assets/img/hero-img.png" class="img-fluid" alt=""> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="slide">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 d-flex flex-column justify-content-center" id="hero-intro2">
+                <h1 data-aos="fa-de-up">
+                  Mobile App developemt
+                </h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">Transforming Ideas into Seamless Mobile Experiences - Unlock the Power of Innovation with Our Expert Mobile App Development Solutions.</h2>
+                <!-- <div data-aos="fade-up" data-aos-delay="600">
+                  <div class="text-center text-lg-start">
+                    <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                      <span>CONTACT US TODAY</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+              <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src="assets/img/app-dev.jpg" alt="">
+                <!-- <img src="assets/img/hero-img.png" class="img-fluid" alt=""> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="slide">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 d-flex flex-column justify-content-center" id="hero-intro3">
+                <h1 data-aos="fade-up">
+                  Web design and development
+                </h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">Elevating your online presence through innovative web design and development solutions</h2>
+                <!-- <div data-aos="fade-up" data-aos-delay="600">
+                  <div class="text-center text-lg-start">
+                    <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                      <span>CONTACT US TODAY</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+              <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src="assets/img/web-design.jpg" alt="">
+                <!-- <img src="assets/img/hero-img.png" class="img-fluid" alt=""> -->
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+  </div><!-- End // .slider -->
+  
+  <div class="slide_buttons">
+  </div>
+  
+  <div class="directional_nav">
+    <div class="previous_btn" title="Previous">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+        <g>
+          <g>
+            <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
+        c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
+            <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="next_btn" title="Next">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+        <g>
+          <g>
+            <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
+            <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div><!-- End // .directional_nav -->
+</div>
+</section>
 
-  </section><!-- End Hero -->
+<!-- #######End ofslider hero section############ -->
 
 <!-- ------Main Content--- -->
   <main id="main">
+     <!-- ======= Counts Section ======= -->
+     <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <img src="assets/img/clients_img.png" alt="">
+              <div>
+               <p class="span"> <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="4" class="purecounter"></span>+</p>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <img src="assets/img/projects_img.png" alt=""></i>
+              <div>
+                <p class="span"><span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="4" class="purecounter"></span>+</p>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-headset" style="color: #15be56;"></i>
+              <div>
+                <p class="span"><span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="4" class="purecounter"></span>+</p>
+                <p>Hours Of Support</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-people" style="color: #bb0852;"></i>
+              <div>
+              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="4" class="purecounter"></span>
+                <p>Our Team</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section><!-- End Counts Section -->
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
 
@@ -165,42 +362,306 @@
             </div>
           </div>
 
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+          <!-- <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
             <img src="about-img.jpg" class="img-fluid" alt="">
+          </div> -->
+
+          <div class="window col-lg-6 d-flex align-items-center">
+            <div id="drag-container">
+              <div id="spin-container">
+                <!-- Add your images (or video) here -->
+                <img src="assets/img/spin-container/Android-App.png"alt="">
+                <img src="assets/img/spin-container/ios-app-dev.png" alt="">
+                <img src="assets/img/spin-container/AI-image.png" alt="">
+                <img src="assets/img/spin-container/cloud-image.png" alt="">
+                <img src="assets/img/spin-container/Iot-image.png" alt="">
+                <img src="assets/img/spin-container/web-Dev-n-design.png" alt="">
+                
+                <!-- Example image with link -->
+                <a target="_blank" href="https://47payday.com/">
+                  <!-- <h1>
+                    Android and Ios Apps
+                  </h1> -->
+                </a>
+            
+                <!-- Example add video  -->
+                <!-- <video controls autoplay="autoplay" loop>
+                  <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+                </video> -->
+             
+            
+                <!-- Text at center of ground -->
+                <!-- <p>TechBiz Products and services.</p> -->
+              </div>
+              <div id="ground"></div>
+            </div>
+            
+            <div id="music-container"></div>
+            
+            
+            <style>
+            #drag-container, #spin-container {
+              position: relative;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              margin: auto;
+              -webkit-transform-style: preserve-3d;
+                      transform-style: preserve-3d;
+              -webkit-transform: rotateX(-10deg);
+                      transform: rotateX(-10deg);
+            }
+            
+            #drag-container img, #drag-container video {
+              -webkit-transform-style: preserve-3d;
+                      transform-style: preserve-3d;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              line-height: 200px;
+              font-size: 50px;
+              text-align: center;
+              -webkit-box-shadow: 0 0 8px #fff;
+                      box-shadow: 0 0 8px #fff;
+              -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+            }
+            
+            #drag-container img:hover, #drag-container video:hover {
+              -webkit-box-shadow: 0 0 15px #fffd;
+                      box-shadow: 0 0 15px #fffd;
+              -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+            }
+            
+            #drag-container p {
+              font-family: Serif;
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+                      transform: translate(-50%,-50%) rotateX(90deg);
+              color: #fff;
+            }
+            
+            #ground {
+              width: 900px;
+              height: 900px;
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+                      transform: translate(-50%,-50%) rotateX(90deg);
+              background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
+            }
+            
+            #music-container {
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            
+            @-webkit-keyframes spin {
+              from{
+                -webkit-transform: rotateY(0deg);
+                        transform: rotateY(0deg);
+              } to{
+                -webkit-transform: rotateY(360deg);
+                        transform: rotateY(360deg);
+              }
+            }
+            
+            @keyframes spin {
+              from{
+                -webkit-transform: rotateY(0deg);
+                        transform: rotateY(0deg);
+              } to{
+                -webkit-transform: rotateY(360deg);
+                        transform: rotateY(360deg);
+              }
+            }
+            @-webkit-keyframes spinRevert {
+              from{
+                -webkit-transform: rotateY(360deg);
+                        transform: rotateY(360deg);
+              } to{
+                -webkit-transform: rotateY(0deg);
+                        transform: rotateY(0deg);
+              }
+            }
+            @keyframes spinRevert {
+              from{
+                -webkit-transform: rotateY(360deg);
+                        transform: rotateY(360deg);
+              } to{
+                -webkit-transform: rotateY(0deg);
+                        transform: rotateY(0deg);
+              }
+            }
+              </style>
+            
+            
+            
+            
+            <script>
+              
+            // You can change global variables here:
+            var radius = 240; // how big of the radius
+            var autoRotate = true; // auto rotate or not
+            var rotateSpeed = -60; // unit: seconds/360 degrees
+            var imgWidth = 120; // width of images (unit: px)
+            var imgHeight = 170; // height of images (unit: px)
+            
+            // Link of background music - set 'null' if you dont want to play background music
+            var bgMusicURL = '';
+            var bgMusicControls = true; // Show UI music control
+            
+            /*
+                 NOTE:
+                   + imgWidth, imgHeight will work for video
+                   + if imgWidth, imgHeight too small, play/pause button in <video> will be hidden
+                   + Music link are taken from: https://hoangtran0410.github.io/Visualyze-design-your-own-/?theme=HauMaster&playlist=1&song=1&background=28
+                   + Custom from code in tiktok video  https://www.facebook.com/J2TEAM.ManhTuan/videos/1353367338135935/
+            */
+            
+            
+            // ===================== start =======================
+            // animation start after 1000 miliseconds
+            setTimeout(init, 1000);
+            
+            var odrag = document.getElementById('drag-container');
+            var ospin = document.getElementById('spin-container');
+            var aImg = ospin.getElementsByTagName('img');
+            var aVid = ospin.getElementsByTagName('video');
+            var aEle = [...aImg, ...aVid]; // combine 2 arrays
+            
+            // Size of images
+            ospin.style.width = imgWidth + "px";
+            ospin.style.height = imgHeight + "px";
+            
+            // Size of ground - depend on radius
+            var ground = document.getElementById('ground');
+            ground.style.width = radius * 3 + "px";
+            ground.style.height = radius * 3 + "px";
+            
+            function init(delayTime) {
+              for (var i = 0; i < aEle.length; i++) {
+                aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
+                aEle[i].style.transition = "transform 1s";
+                aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
+              }
+            }
+            
+            function applyTranform(obj) {
+              // Constrain the angle of camera (between 0 and 180)
+              if(tY > 180) tY = 180;
+              if(tY < 0) tY = 0;
+            
+              // Apply the angle
+              obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
+            }
+            
+            function playSpin(yes) {
+              ospin.style.animationPlayState = (yes?'running':'paused');
+            }
+            
+            var sX, sY, nX, nY, desX = 0,
+                desY = 0,
+                tX = 0,
+                tY = 10;
+            
+            // auto spin
+            if (autoRotate) {
+              var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
+              ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
+            }
+            
+            // add background music
+            if (bgMusicURL) {
+              document.getElementById('music-container').innerHTML += `
+            <audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+            </audio>
+            `;
+            }
+            
+            // setup events
+            document.onpointerdown = function (e) {
+              clearInterval(odrag.timer);
+              e = e || window.event;
+              var sX = e.clientX,
+                  sY = e.clientY;
+            
+              this.onpointermove = function (e) {
+                e = e || window.event;
+                var nX = e.clientX,
+                    nY = e.clientY;
+                desX = nX - sX;
+                desY = nY - sY;
+                tX += desX * 0.1;
+                tY += desY * 0.1;
+                applyTranform(odrag);
+                sX = nX;
+                sY = nY;
+              };
+            
+              this.onpointerup = function (e) {
+                odrag.timer = setInterval(function () {
+                  desX *= 0.95;
+                  desY *= 0.95;
+                  tX += desX * 0.1;
+                  tY += desY * 0.1;
+                  applyTranform(odrag);
+                  playSpin(false);
+                  if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+                    clearInterval(odrag.timer);
+                    playSpin(true);
+                  }
+                }, 17);
+                this.onpointermove = this.onpointerup = null;
+              };
+            
+              return false;
+            };
+            
+            document.onmousewheel = function(e) {
+              e = e || window.event;
+              var d = e.wheelDelta / 20 || -e.detail;
+              radius += d;
+              init(1);
+            };
+            
+              </script>
           </div>
 
         </div>
       </div>
 
     </section><!-- End About Section -->
-    <section id="Mission" class="mission">
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="mission-section">
-              <!-- <img src="assets/img/Misision-logo.png"class="logo" alt=""> -->
-            <div class="content">
-              <h3>Mission</h3>
-              <h2>To be the preferred choice for the delivery of innovative 
-                and integrative public and private sector solutions and 
-                services.</h2>
-                <!-- <div class="vision-content">
-              <!-- <img src="assets/img/Vision-logo.png" class="logo" alt=""> -->
-              <!-- <div class="vision-content">  -->
-                <h3>Vision</h3>
-                <h2>Transform ideas into reality by using smart & innovative 
-                  technology solutions</h2>
-                  </div>
+    <section class="vision-mission" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col" data-aos="fade-up">
+            <img src="assets/img/Vision-logo.png" data-aos="fade-up" alt="Vision Logo">
+            <div data-aos="fade-up">
+            <h2 data-aos="fade-up">Our Vision</h2>
+            <p>To be the preferred choice for the delivery of innovative 
+              and integrative public and private sector solutions and 
+              services.</p>
+            </div> 
+          </div>
+          <div class="col" data-aos="fade-up">
+            <img src="assets/img/mission-icon.png" data-aos="fade-up" alt="Mission Logo">
+            <div class="mission-content" data-aos="fade-up">
+            <h2>Our Mission</h2>
+            <p>Transform ideas into reality by using smart & innovative 
+              technology solutions.</p>
             </div>
           </div>
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/mission_vision.jpg"class="mission_vision">
-          </div>
-          </div>
-         
         </div>
       </div>
     </section>
+    
 
 
 <!-- ######################BOX MENU WRAPPER FIXED############################# -->
@@ -220,6 +681,315 @@
   </div>
 </div> -->
 <!-- ######################END OF BOX MENU WRAPPER FIXED############################# -->
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h2>our Products & Services</h2>
+    </header>
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-box blue">
+          <i class="ri-discuss-line icon"></i>
+          <h3>47Pro - Revenue Management system</h3>
+          <p>enable county governments to manage revenue collection and keep track of all revenue data in real time.</p>
+          <a href="#contact" class="nav-link-to"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-box orange">
+          <i class="ri-discuss-line icon"></i>
+          <h3>47Dev - Software Development</h3>
+          <p>We translate ideas into Custom software.<br>
+            We pride ourselves in our capability to breathe life to your brand, from creation to execution and validation.</p>
+          <a href="#contact" class="read-more"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-box green">
+          <i class="ri-discuss-line icon"></i>
+          <h3>47Cloud - Cloud and Infrastructure.</h3>
+          <p>47cloud is a comprehensive cloud and infrastructure solution designed to empower businesses with reliable, scalable, and secure IT infrastructure</p>
+          <a href="#contact" class="read-more"><span>Get this Service</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-box red">
+          <i class="ri-discuss-line icon"></i>
+          <h3>47payday-Payroll Software</h3>
+          <p>47payday is a comprehensive human resource management system designed to streamline and optimize your HR processes.</p>
+          <a href="https://47payday.com/" target="_blank" class="read-more"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-box purple">
+          <i class="ri-discuss-line icon"></i>
+          <h3>47CRMalerts-Invoice Notification reminder</h3>
+          <p>47CRM Alerts is a powerful tool that automates invoice notification reminders through SMS and email.</p>
+          <a href="#contact" class="read-more"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="service-box pink">
+          <i class="ri-discuss-line icon"></i>
+          <h3>Automation -IoT and AI</h3>
+          <p>Automation is at the core of our smart innovations, utilizing cutting-edge technologies such as AI and IOT.
+          </p>
+          <a href="#contact" class="read-more"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- End Services Section -->
+<!-- ======= technologies Section ======= -->
+<section id="features" class="features">
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h2>Technologies Proficiency</h2>
+      <p>We provide you with various technologies to give you a seamless and superior experience.</p>
+    </header>
+
+    <div class="row1">
+
+      <!-- <div class="col-lg-6">
+        <img src="assets/img/web_dev.jpg" class="img-fluid" alt="">
+      </div> -->
+
+      <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+        <div class="row align-self-center gy-4">
+
+          <div class="col-md-6" data-aos="zoom-out"
+          data-aos-delay="200">
+            <div class="feature-box d-flex align-items-center">
+              <div><i class="bi bi-check"></i>
+              <h3>WEB APPS</h3></div>
+              <ul>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>.net</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+            <div class="feature-box d-flex align-items-center">
+              <div><i class="bi bi-check"></i>
+              <h3>FRONT END</h3></div>
+              <ul>
+                <li>UI/UX</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>AngularJS</li>
+                <li>NodeJS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+            <div class="feature-box d-flex align-items-center">
+              <div><i class="bi bi-check"></i>
+              <h3>CMS & FRAME WORKS</h3></div>
+              <ul>
+                <li>Wordpress</li>
+                <li>Magento</li>
+                <li>Drupal</li>
+                <li>Prestashop</li>
+                <li>WooCommerce</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+            <div class="feature-box d-flex align-items-center">
+            <div><i class="bi bi-check"></i>
+              <h3>CLOUD & INFRASTRUCTURE</h3></div>
+              <ul>
+                <li>AWS</li>
+                <li>Google Cloud</li>
+                <li>Huawei</li>
+                <li>Azure</li>
+                <li>NodeJS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+            <div class="feature-box d-flex align-items-center">
+            <div> <i class="bi bi-check"></i>
+              <h3>IOS</h3></div>
+              <ul>
+                <li>objective-c</li>
+                <li>swift</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+            <div class="feature-box d-flex align-items-center">
+            <div><i class="bi bi-check"></i>
+              <h3>ANDROID</h3></div>
+              <ul>
+                <li>Java</li>
+                <li>Kotlin</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+            <div class="feature-box d-flex align-items-center">
+              <div><i class="bi bi-check"></i>
+              <h3>HYBRID</h3></div>
+              <ul>
+                <li>Flutter</li>
+                <li>Ionic</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+            <div class="feature-box d-flex align-items-center">
+              <div><i class="bi bi-check"></i>
+              <h3>QA & TESTING</h3></div>
+              <ul>
+                <li>Selenium</li>
+                <li>Appium</li>
+                <li>UI Automator</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="row2 feature-icons" data-aos="fade-up" id="we_serve">
+      <h3>INDUSTRIES WE SERVE</h3>
+
+        <h2>Techbiz is a leading provider of technology solutions and custom software products.</h2>
+
+        <div class="row">
+
+        <!-- <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/img/features-3.png" class="p-4" alt="">
+        </div> -->
+
+        <div class="col-xl-8 d-flex content">
+          <div class="row align-self-center gy-4">
+
+            <div class="col-md-6 icon-box" data-aos="fade-up">
+              <i class="fas fa-dollar-sign banking"></i>
+              <div>
+                <h4>Banking & finance</h4>
+                <!-- <p>For any secure payments integrations into software products.</p> -->
+              </div> 
+            </div>
+
+            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-shopping-cart"></i>
+              <div>
+                <h4>E-commerce and Retail</h4>
+                <!-- <p>We develop E-commerse solutions to enable businesses to have platforms to showcase their products and manage their sales while engaging with their customers efficiently.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-home"></i>
+              <div>
+                <h4>Education and Learning</h4>
+                <!-- <p>We build school managment systems integrated with students attendance monitoring functionalities.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+              <i class="ri-magic-line"></i>
+              <div>
+                <h4>Manufacturing Industry.</h4>
+                <!-- <p>We integrate IoT technologies into industrial processes for efficient industrial process automation.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+              <i class="ri-command-line"></i>
+              <div>
+                <h4>I.T Consultation</h4>
+                <!-- <p>We offer consultancy and also provide instant feedback to enquiries made by our clients. </p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-car"></i>
+              <div>
+                <h4>Transportation & Logistics.</h4>
+                <!-- <p>Integration of tracking mechanisms and real time monitoring of goods in transit.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+              <i class="ri-radar-line"></i>
+              <div>
+                <h4>Communication Industries</h4>
+                <!-- <p>We provide communication infrastructures that meet our clients specific communication needs.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+              <i class="fas fa-cross"></i>
+              <div>
+                <h4>Healthcare</h4>
+                <!-- <p>We develop solutiions for healthcare institutions to manage patients data and to efficiently monitor their wellbeing.</p> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+    </section>
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>OUR PARTNERS</h2>
+          <p>Industry recognition.</p>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/dell-logo.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/google-logo.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/hp-logo.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/microsoft-logo.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/vmware-logo.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/huawei-logo.png" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/img/clients/mcg-logo.jpeg" alt=""></div> -->
+            <!-- <div class="swiper-slide"><img src="assets/img/clients/.png" class="img-fluid" alt=""></div> -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
+
     <!-- ======= why us Section ======= -->
     <section id="values" class="values">
 
@@ -290,270 +1060,8 @@
       </div>
 
     </section><!-- End Values Section -->
-
-    <!-- ======= technologies Section ======= -->
-      <section id="features" class="features">
-      <div class="shape"></div>
-      <div class="shape"></div>
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Technologies</h2>
-          <p>We provide you with various technologies to give you a seamless and superior experience.</p>
-        </header>
-
-        <div class="row1">
-
-          <!-- <div class="col-lg-6">
-            <img src="assets/img/web_dev.jpg" class="img-fluid" alt="">
-          </div> -->
-
-          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
-            <div class="row align-self-center gy-4">
-
-              <div class="col-md-6" data-aos="zoom-out"
-              data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <div><i class="bi bi-check"></i>
-                  <h3>WEB APPS</h3></div>
-                  <ul>
-                    <li>Java</li>
-                    <li>PHP</li>
-                    <li>Python</li>
-                    <li>.net</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <div><i class="bi bi-check"></i>
-                  <h3>FRONT END</h3></div>
-                  <ul>
-                    <li>UI/UX</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>AngularJS</li>
-                    <li>NodeJS</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center">
-                  <div><i class="bi bi-check"></i>
-                  <h3>CMS & FRAME WORKS</h3></div>
-                  <ul>
-                    <li>Wordpress</li>
-                    <li>Magento</li>
-                    <li>Drupal</li>
-                    <li>Prestashop</li>
-                    <li>WooCommerce</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
-                 <div><i class="bi bi-check"></i>
-                  <h3>CLOUD & INFRASTRUCTURE</h3></div>
-                  <ul>
-                    <li>AWS</li>
-                    <li>Google Cloud</li>
-                    <li>Huawei</li>
-                    <li>Azure</li>
-                    <li>NodeJS</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
-                <div> <i class="bi bi-check"></i>
-                  <h3>IOS</h3></div>
-                  <ul>
-                    <li>objective-c</li>
-                    <li>swift</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
-                <div><i class="bi bi-check"></i>
-                  <h3>ANDROID</h3></div>
-                  <ul>
-                    <li>Java</li>
-                    <li>Kotlin</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
-                <div class="feature-box d-flex align-items-center">
-                  <div><i class="bi bi-check"></i>
-                  <h3>HYBRID</h3></div>
-                  <ul>
-                    <li>Flutter</li>
-                    <li>Ionic</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
-                <div class="feature-box d-flex align-items-center">
-                  <div><i class="bi bi-check"></i>
-                  <h3>QA & TESTING</h3></div>
-                  <ul>
-                    <li>Selenium</li>
-                    <li>Appium</li>
-                    <li>UI Automator</li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-        
-      <div class="row2 feature-icons" data-aos="fade-up" id="we_serve">
-      <h3>WHO WE SERVE</h3>
-
-        <h2>Techbiz is a leading provider of technology solutions and custom software products.</h2>
-
-        <div class="row">
-
-        <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-          <img src="assets/img/features-3.png" class="p-4" alt="">
-        </div>
-
-        <div class="col-xl-8 d-flex content">
-          <div class="row align-self-center gy-4">
-
-            <div class="col-md-6 icon-box" data-aos="fade-up">
-              <i class="fas fa-dollar-sign banking"></i>
-              <div>
-                <h4>Banking & finance</h4>
-                <p>For any secure payments integrations into software products.</p>
-              </div>
-            </div>
-
-            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-              <i class="fas fa-shopping-cart"></i>
-              <div>
-                <h4>E-commerce and Retail</h4>
-                <p>We develop E-commerse solutions to enable businesses to have platforms to showcase their products and manage their sales while engaging with their customers efficiently.</p>
-              </div>
-            </div>
-
-            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-              <i class="fas fa-home"></i>
-              <div>
-                <h4>Education and Learning</h4>
-                <p>We build school managment systems integrated with students attendance monitoring functionalities.</p>
-              </div>
-            </div>
-
-            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-              <i class="ri-magic-line"></i>
-              <div>
-                <h4>Manufacturing Industry.</h4>
-                <p>We integrate IoT technologies into industrial processes for efficient industrial process automation.</p>
-              </div>
-            </div>
-
-            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-              <i class="ri-command-line"></i>
-              <div>
-                <h4>I.T Consultation</h4>
-                <p>We offer consultancy and also provide instant feedback to enquiries made by our clients. </p>
-              </div>
-            </div>
-
-            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-              <i class="fas fa-car"></i>
-              <div>
-                <h4>Transportation & Logistics.</h4>
-                <p>Integration of tracking mechanisms and real time monitoring of goods in transit.</p>
-              </div>
-            </div>
-
-            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-              <i class="ri-radar-line"></i>
-              <div>
-                <h4>Communication Industries</h4>
-                <p>We provide communication infrastructures that meet our clients specific communication needs.</p>
-              </div>
-            </div>
-
-            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-              <i class="fas fa-cross"></i>
-              <div>
-                <h4>Healthcare</h4>
-                <p>We develop solutiions for healthcare institutions to manage patients data and to efficiently monitor their wellbeing.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-      </div>
-    </div>
-    </section>
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <img src="assets/img/clients_img.png" alt="">
-              <div>
-               <p class="span"> <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="4" class="purecounter"></span>+</p>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <img src="assets/img/projects_img.png" alt=""></i>
-              <div>
-                <p class="span"><span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="4" class="purecounter"></span>+</p>
-                <p>Projects</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-headset" style="color: #15be56;"></i>
-              <div>
-                <p class="span"><span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="4" class="purecounter"></span>+</p>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-people" style="color: #bb0852;"></i>
-              <div>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="4" class="purecounter"></span>
-                <p>Our Team.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      
-    </section><!-- End Counts Section -->
+ 
+   
 
      <!-- / row -->
 
@@ -638,83 +1146,11 @@
         <!-- Feature Icons -->
         <!-- End Feature Icons -->
 
-      </div>
+      <!-- </div> -->
 
-    </section><!-- End Features Section -->
+    <!-- </section>End Features Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>our Products & Services</h2>
-          <p>We have ready made products to suite your business needs and also customizable products.</p>
-        </header>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
-              <i class="ri-discuss-line icon"></i>
-              <h3>47Pro - Revenue Management system</h3>
-              <p>enable county governments to manage revenue collection and keep track of all revenue data in real time.</p>
-              <a href="#contact" class="nav-link-to"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="ri-discuss-line icon"></i>
-              <h3>47Dev - Software Development</h3>
-              <p>We translate ideas into Custom software.<br>
-                We pride ourselves in our capability to breathe life to your brand, from creation to execution and validation.</p>
-              <a href="#contact" class="read-more"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
-              <h3>47Cloud - Cloud and Infrastructure.</h3>
-              <p>47cloud is a comprehensive cloud and infrastructure solution designed to empower businesses with reliable, scalable, and secure IT infrastructure</p>
-              <a href="#contact" class="read-more"><span>Get this Service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-box red">
-              <i class="ri-discuss-line icon"></i>
-              <h3>47payday-Payroll Software</h3>
-              <p>47payday is a comprehensive human resource management system designed to streamline and optimize your HR processes.</p>
-              <a href="https://47payday.com/" target="_blank" class="read-more"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box purple">
-              <i class="ri-discuss-line icon"></i>
-              <h3>47CRMalerts-Invoice Notification reminder</h3>
-              <p>47CRM Alerts is a powerful tool that automates invoice notification reminders through SMS and email.</p>
-              <a href="#contact" class="read-more"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="service-box pink">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Automation - Smart innovations i.e IoT and AI</h3>
-              <p>Automation is at the core of our smart innovations, utilizing cutting-edge technologies such as AI and IOT.
-              </p>
-              <a href="#contact" class="read-more"><span>Get this service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Services Section -->
+    
 
     <!-- ======= Pricing Section ======= -->
     <!-- <section id="pricing" class="pricing">
@@ -1098,10 +1534,10 @@
                   <h4>Ceo &amp; Founder</h4>
                 </div>
               </div>
-            </div> -->
+            </div> 
             <!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+             <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -1115,7 +1551,7 @@
                   <h4>Designer</h4>
                 </div>
               </div>
-            </div> -->
+            </div> 
             <!-- End testimonial item -->
 
             <!-- <div class="swiper-slide">
@@ -1132,10 +1568,10 @@
                   <h4>Store Owner</h4>
                 </div>
               </div> 
-            </div> -->
+            </div>  --> 
             <!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
+<!-- 
+             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -1149,10 +1585,10 @@
                   <h4>Freelancer</h4>
                 </div>
               </div>
-            </div> -->
+            </div>  -->
             <!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+             <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -1166,15 +1602,15 @@
                   <h4>Entrepreneur</h4>
                 </div>
               </div>
-            </div>--> <!-- End testimonial item -->
-<!-- 
+            </div> End testimonial item -->
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section> -->
+    </section>
     <!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
@@ -1273,32 +1709,7 @@
     <!-- End Team Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Our Clients</h2>
-          <p>Industry recognition.</p>
-        </header>
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/dell-logo.png" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/google-logo.png" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/hp-logo.png" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/microsoft-logo.png" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/vmware-logo.png" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/huawei-logo.png" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/mcg-logo.jpeg" alt=""></div>
-            <!-- <div class="swiper-slide"><img src="assets/img/clients/.png" class="img-fluid" alt=""></div> -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-    </section><!-- End Clients Section -->
-
+    
     <!-- ======= Recent Blog Posts Section ======= -->
     <!-- <section id="recent-blog-posts" class="recent-blog-posts">
 
@@ -1544,8 +1955,8 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="assets/js/slider.js"></script>
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

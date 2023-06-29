@@ -628,19 +628,6 @@ height: 10px;
  margin: 0;
 }
 
-.carousel h1 {
-  margin: 35% 0 0 100px;
-  font-size: 50px;
-  font-weight: 700;
-  color: navy;
-  font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
-}
-
-.carousel h2 {
-  color:navy;
-  margin: 10px 0 0 100px;
-  font-size: 26px;
-}
 #hero-intro1> h1 {
   margin: 35% 0 0 100px;
   font-size: 50px;
@@ -717,6 +704,7 @@ height: 10px;
 
 #hero-intro{
   z-index: 2;
+  background-color: #000000
 }
 #hero-intro1{
   z-index: 2;
@@ -727,12 +715,38 @@ height: 10px;
 #hero-intro3{
   z-index: 2;
 }
+.slide .container .text-displayed{
+  background: linear-gradient(90deg, #000000ce 0%, #241a1a33 51%, #ffffff 100%);
+  border-radius: 10px;
+  position: absolute;
+  min-height: 30vh;
+  max-height: max-content;
+  opacity: 0.4;
+  width: 100%;
+  top: 30%;
+  margin: 0 0 0 0;
+}
+.slide .container .text-displayed h1{
+  margin: 0 0 0 0;
+  font-size: 50px;
+  font-weight: 700;
+  color:#f1f1f7;
+  font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
+  text-shadow: 4px 4px 8px #070012c9;
+}
+.slide .container .text-displayed h2{
+margin: 0 0 0 0;
+width: 70%;
+color:#f1f1f7;
+font-size: 24px;
+text-shadow: 4px 4px 8px #070012c9;
+}
 .slide .container .hero-img{
   top: 0;
   left: 0;
   width: 100%;
   position: absolute;
-  height: 100%;
+  height: fit-content;
   overflow: hidden;
 }
 .slide .container  .hero-img img{
@@ -754,17 +768,25 @@ height: 10px;
 @media (max-width: 991px) {
   .hero {
     height: auto;
-    padding: 120px 0 60px 0;
+    padding: 0px 0 0px 0;
   }
 
   .hero .hero-img {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 1px;
   }
 
   .hero .hero-img img {
-    width: 80%;
+    width: 100%;
+    height: 50%;
   }
+.header{
+  padding: 0;
+}
+.slide .container .text-displayed{
+  width: 100%;
+  
+}
 }
 
 @media (max-width: 768px) {
@@ -797,6 +819,7 @@ height: 10px;
   margin: 0 auto;
   max-width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .slide_viewer {
@@ -816,6 +839,7 @@ height: 10px;
   height: 100%;
   position: absolute;
   width: 100%;
+  flex: 0 0 100%;
 }
 
 .slide:first-child {
@@ -1316,17 +1340,17 @@ width: 100%;
 }
 
 .features .feature-box {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 0 30px #012a7074;
   transition: 0.3s;
-  height: 15vh;
+  height: 18vh;
   display: flex;
   border-radius: 10px;
-  /* flex-direction: column; */
 }
 .features .feature-box div{
  display: flex;
  flex-direction: row;
  padding-top: 3px;
+ padding-left: 10px;
  position: relative;
  color: #012970;
 }
@@ -1423,7 +1447,8 @@ width: 100%;
 } */
 
 .features .feature-icons {
-  margin-top: 40px;
+  margin: 0 0 0 0;
+  width: 100%;
 }
 
 .features .feature-icons h3 {
@@ -1443,11 +1468,12 @@ width: 100%;
 }
 
 .features .row2 .row{
-  height: 60vh;
+  width: 100%;
+  height: auto;
   width: fit-content;
   object-fit: contain;
-
-  margin-left: 20%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -1456,23 +1482,42 @@ width: 100%;
   }
 }
 
+.features .feature-icons .content{
+  width: 100%;
+  height: auto;
+}
+
 .features .feature-icons .content .icon-box {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 19vh;
 }
 
 .features .feature-icons .content .icon-box h4 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   margin: 0 0 10px 0;
   color: #012970;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+}
+
+@media (max-width:700px) {
+  .features .feature-icons .content .icon-box{
+    margin-left: 10%;
+  }
+  
 }
 
 .features .feature-icons .content .icon-box i {
-  font-size: 44px;
+  font-size: 54px;
   line-height: 44px;
   color: #0245bc;
-  margin-right: 15px;
-  justify-content: center;
+  margin: 0 0 40px 0;
+  
 }
 
 .features .feature-icons .content .icon-box p {
@@ -1507,7 +1552,7 @@ width: 100%;
   }
 
   25% {
-      top: 10%;
+      top: 25%;
       transform: scale(1.6) rotate(0deg);
       opacity: 0.6;
   }
@@ -1596,7 +1641,7 @@ width: 100%;
 --------------------------------------------------------------*/
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  height: 100%;
+  max-height: 80%;
   padding: 60px 30px;
   text-align: center;
   transition: 0.3s;
@@ -1650,9 +1695,9 @@ width: 100%;
   color: #ffa500;
 }
 
-.services .service-box.blue .nav-link-to {
+.services .service-box.blue .read-more {
   color: #FFFDD0;
-  margin-top: 2px;
+  margin-top: 1px;
   line-height: 0;
   padding: 15px 40px;
   border-radius: 30px;
@@ -1660,18 +1705,15 @@ width: 100%;
   background: navy;
   box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
+  white-space: nowrap;
 }
-.services .service-box.blue .nav-link-to:hover{
+.services .service-box.blue >p{
+margin-bottom: 5vh;
+}
+.services .service-box.blue .read-more:hover{
   color: #ffa500;
-  margin-top: 2px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
   background: white;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
-
+  transform: scale(1.1);
 }
 
 .services .service-box.blue:hover {
@@ -1701,17 +1743,12 @@ width: 100%;
   background: navy;
   box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .services .service-box.orange .read-more:hover{
   color: #ffa500;
-  margin-top: 2px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
-  background: #ffffff;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
+  background: white;
+  transform: scale(1.1);
 }
 
 .services .service-box.orange:hover {
@@ -1741,7 +1778,7 @@ width: 100%;
   background: navy;
   box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
-  
+  white-space: nowrap;
 }
 .services .service-box:hover{
   transform: scale(1.1);
@@ -1760,6 +1797,7 @@ width: 100%;
   background: white;
   box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
+  transform: scale(1.1);
 }
 
 .services .service-box.red {
@@ -1784,6 +1822,7 @@ width: 100%;
   background: navy;
   box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 
@@ -1800,6 +1839,7 @@ width: 100%;
   background: white;
   box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
+  transform: scale(1.1);
 }
 
 .services .service-box.purple {
@@ -1816,14 +1856,15 @@ width: 100%;
 
 .services .service-box.purple .read-more {
   color: #FFFDD0;
-  margin-top: 1px;
+  margin-top: auto;
   line-height: 0;
   padding: 15px 40px;
   border-radius: 30px;
-  transition: 0.5s;
+  transition:transform 0.5s ease;
   background: navy;
   box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .services .service-box.purple:hover {
@@ -1831,14 +1872,8 @@ width: 100%;
 }
 .services .service-box.service-box.purple .read-more:hover{
   color: #ffa500;
-  margin-top: 2px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
   background: white;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
+  transform: scale(1.1);
 }
 
 .services .service-box.pink {
@@ -1855,30 +1890,27 @@ width: 100%;
 
 .services .service-box.pink .read-more {
   color: #FFFDD0;
-  margin-top: 1px;
+  margin-top: auto;
   line-height: 0;
   padding: 15px 40px;
   border-radius: 30px;
-  transition: 0.5s;
+  transition:transform 0.5s ease;
   background: navy;
-  box-shadow: 0px 5px 30px #051df066;
+  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
   text-transform: uppercase;
+  white-space: nowrap;
 }
-
+.services .service-box.pink >p{
+  margin-bottom: 5.3vh;
+  }
 
 .services .service-box.pink:hover {
   background: #ffa500;
 }
 .services .service-box.pink .read-more:hover{
   color: #ffa500;
-  margin-top: 2px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
   background: white;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
+  transform: scale(1.1);
 }
 
 .services .service-box:hover h3,

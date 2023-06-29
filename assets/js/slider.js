@@ -13,37 +13,49 @@ setTimeout(function() {
                   
                   advance();
                   
+                  // Check if the group is already animated or the current index is the same as the new index
                   if ($group.is(':animated') || currentIndex === newIndex) {
                     return;
                   }
                   
+                  // Remove 'active' class from current bullet and add it to the new bullet
                   bulletArray[currentIndex].removeClass('active');
                   bulletArray[newIndex].addClass('active');
                   
+                  // Determine the slide positions and animations based on the new index
                   if (newIndex > currentIndex) {
                     slideLeft = '100%';
                     animateLeft = '-100%';
+                    'transform 0.5s ease'
                   } else {
                     slideLeft = '-100%';
                     animateLeft = '100%';
+                    'transform 0.5s ease'
                   }
                   
+                  // Set the new slide's initial position and display it
                   $slides.eq(newIndex).css({
                     display: 'block',
                     left: slideLeft
                   });
+
+                   // Animate the group to move to the new slide position
                   $group.animate({
                     left: animateLeft
                   }, function() {
+                     // Hide the previous slide
                     $slides.eq(currentIndex).css({
                       display: 'none'
                     });
+                    // Reset the new slide's position
                     $slides.eq(newIndex).css({
-                      left: 0
+                      left: 1 
                     });
+                    // Reset the group's position
                     $group.css({
                       left: 0
                     });
+                      // Update the current index
                     currentIndex = newIndex;
                   });
                 }
@@ -56,7 +68,7 @@ setTimeout(function() {
                     } else {
                       move(0);
                     }
-                  }, 4000);
+                  }, 5000);
                 }
                 
                 $('.next_btn').on('click', function() {

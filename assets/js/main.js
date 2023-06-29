@@ -287,7 +287,7 @@ window.addEventListener("DOMContentLoaded", function() {
    */
   function aos_init() {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       easing: "ease-in-out",
       once: true,
       mirror: false

@@ -9,7 +9,7 @@ setTimeout(function() {
                 var timeout;
                 
                 function move(newIndex) {
-                  var animateLeft, slideLeft;
+                  var slideLeft, animateLeft;
                   
                   advance();
                   
@@ -24,13 +24,13 @@ setTimeout(function() {
                   
                   // Determine the slide positions and animations based on the new index
                   if (newIndex > currentIndex) {
-                    slideLeft = '100%';
+                    slideLeft = '100%';'transform 0.5s ease'
                     animateLeft = '-100%';
-                    'transform 0.5s ease'
+                    
                   } else {
                     slideLeft = '-100%';
                     animateLeft = '100%';
-                    'transform 0.5s ease'
+                  
                   }
                   
                   // Set the new slide's initial position and display it
@@ -49,7 +49,7 @@ setTimeout(function() {
                     });
                     // Reset the new slide's position
                     $slides.eq(newIndex).css({
-                      left: 1 
+                      left: 0
                     });
                     // Reset the group's position
                     $group.css({
@@ -74,9 +74,8 @@ setTimeout(function() {
                 $('.next_btn').on('click', function() {
                   if (currentIndex < ($slides.length - 1)) {
                     move(currentIndex + 1);
-                  } else {
+                  } else 
                     move(0);
-                  }
                 });
                 
                 $('.previous_btn').on('click', function() {

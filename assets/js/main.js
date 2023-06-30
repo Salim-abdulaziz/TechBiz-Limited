@@ -11,7 +11,8 @@ window.addEventListener("DOMContentLoaded", function() {
   
     setTimeout(function() {
       loader.style.display="none"; 
-    }, 500); // Adjust the timeout value as needed
+      loader.style.zIndex ='0'; 
+    }, 400); // Adjust the timeout value as needed
   });
   //-------------END OF LOADER-------------
 

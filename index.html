@@ -1536,7 +1536,40 @@
 
           <div class="col-lg-6">
 
-            <div class="row gy-4">
+            <div class="contact_form">
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row gy-4">
+  
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+  
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  </div>
+  
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  </div>
+  
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  </div>
+  
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+  
+                    <button type="submit">Send Message</button>
+                  </div>
+  
+                </div>
+              </form>
+            </div>
+
+            <div class="contact_address gy-4">
+
               <div class="col-md-6">
                 <div class="info-box">
                   <div class="icon-hover"><i class="bi bi-geo-alt"></i></div>
@@ -1544,6 +1577,7 @@
                   <p>900 Kaunda Ave,<br>Mombasa</p>
                 </div>
               </div>
+
               <div class="col-md-6">
                 <div class="info-box">
                   <div class="icon-hover"><i class="bi bi-telephone"></i></div>
@@ -1551,6 +1585,7 @@
                   <p><a href="tel:+254711377232">+254 711377232</a></p>
                 </div>
               </div>
+
               <div class="col-md-6">
                 <div class="info-box">
                   <div class="icon-hover"><i class="bi bi-envelope"></i></div>
@@ -1558,6 +1593,7 @@
                   <p><a href="mailto:info@techbizafrica.com">info@techbiz.com</a></p>
                 </div>
               </div>
+
               <div class="col-md-6">
                 <div class="info-box">
                   <div class="icon-hover"><i class="bi bi-clock"></i></div>
@@ -1565,40 +1601,8 @@
                   <p>Mon - Fri: 8:30am-5:00pm, <br> Sat: 9:00am-12:30pm.</p>
                 </div>
               </div>
+
             </div>
-
-          </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
 
           </div>
 

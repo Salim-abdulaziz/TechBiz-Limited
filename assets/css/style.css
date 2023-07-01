@@ -537,14 +537,19 @@ height: 10px;
     display: none;
   }
 }
+@media (min-width:991px){
+  .navbar-mobile{
+    display: none;
+  }
+}
 
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
   top: 0;
   right: 0;
-  left: 0;
-  bottom: 0;
+  left: 50%;
+  bottom: 10%;
   background: rgba(1, 22, 61, 0.9);
   transition: 0.3s;
 }
@@ -622,7 +627,7 @@ height: 10px;
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero Section and slider
 --------------------------------------------------------------*/
 .hero {
  padding: 0;
@@ -804,16 +809,28 @@ text-shadow: 4px 4px 8px #070012c9;
     padding: 0px 0 0px 0;
   }
 
-  .hero .hero-img {
+  .slide .container .hero-image {
     text-align: center;
     margin-top: 1px;
+    display: flex;
+    margin-top: 5%;
+    top: 80px;
+    left: 10%;
+    position: absolute !important;
+    height: 40vh;
+    width: 100%;
   }
 
-  .hero .hero-img img {
-    width: 100%;
-    height: 50%;
+  .slide .container .hero-image img {
+    aspect-ratio: 1;
+    position: relative !important;
+    margin-top: 10% ;
+    width: 40%;
+    height: auto;
+    left: 49% ;
   }
-.header{
+
+  .header{
   padding: 0;
 }
 .slide .container .text-displayed{
@@ -835,7 +852,38 @@ text-shadow: 4px 4px 8px #070012c9;
     font-size: 24px;
   }
 }
-/* #####################heroslider ################## */
+@media (max-width: 990px){
+  .slide .container  .hero-image2{
+    display: flex;
+    margin-top: 5%;
+    top: 75px;
+    left: 10vh;
+    position: absolute !important;
+  }
+  .slide .container  .hero-image2 img{
+    aspect-ratio: 1;
+    position: relative !important;
+    margin-top: 10% ;
+    height: 20vh;
+    left: 20%;
+    margin-right: 0;
+    right: 60vh;
+  }
+  .slide_buttons {
+    bottom: 20px;
+  }
+  
+.previous_btn {
+  bottom: -370px !important;
+  left: 5vh !important;
+}
+
+.next_btn {
+  bottom: -370px !important;
+  right: 5vh !important;
+}
+}
+/* ##################### heroslider continuation ################## */
 
 .carousel {
   height: 75vh;
@@ -963,14 +1011,6 @@ a.slide_btn {
   transform: scale(1.1);
 }
 
-@media only screen and (max-width: 767px) {
-  .previous_btn {
-    left: 50px;
-  }
-  .next_btn {
-    right: 50px;
-  }
-}
 /* ########## END OF HERO SLIDER################################################ */
 /*--------------------------------------------------------------
 # Index Page
@@ -1635,7 +1675,7 @@ width: 100%;
   margin-top: 4%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .features .feature-icons h3 {
     font-size: 28px;
   }
@@ -1651,9 +1691,8 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 12.5%;
-  
-
+  width: 14.5%;
+  margin-right: 2%;
 }
 
 .features .feature-icons .content .icon-box h4 {
@@ -1666,9 +1705,10 @@ width: 100%;
   align-self: center;
 }
 
-@media (max-width:700px) {
+@media (max-width:990px) {
   .features .feature-icons .content .icon-box{
     margin-left: 10%;
+    width: 20vh;
   }
   
 }
@@ -1696,7 +1736,7 @@ width: 100%;
 .content .icon-box img:hover{
   transform: rotate(30deg);
 }
-/*-------------------------animation in landing section--------------------------------------*/
+-------------------------animation in landing section--------------------------------------*/
 .shape:nth-child(1) {
   position: absolute;
   top: 50%;
@@ -2773,11 +2813,27 @@ background-color: transparent;
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact .container .row .col-lg-6{
+  width: 100%;
+}
+.contact .container .row .col-lg-6.contact_form{
+  width: 100%;
+  background-color: #b91c1c;
+}
+.contact .container .row .col-lg-6 .contact_address{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
 .contact .info-box {
   color: #444444;
   background: var(--background-color);
   padding: 30px;
-  border-radius: 40px;
+  border-radius: 10px;
+  width: auto;
+  max-height: 25vh;
 }
 
 .contact .info-box i {

@@ -31,6 +31,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+
   <!-- =======================================================
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
   * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
@@ -75,22 +77,36 @@
           <li><a class="nav-link scrollto" href="#features">Technologies</a></li> -->
           <!-- <li><a class="nav-link scrollto" href="#" >Who we serve</a></li>      -->
           <!-- <li><a class="nav-link scrollto" href="#counts">Analytics</a></li> -->
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li class="dropdown"><a href="#services"><span>Products & Services</span> <i class="bi bi-chevron-right"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#">Our Products <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#services">47Cloud</a></li>
+                  <li><a href="#services">47PayDay</a></li>
+                  <li><a href="#services">47Pro</a></li>
+                  <li><a href="#services">47Dev</a></li>
+                  <li><a href="#services">47CRM Alerts</a></li>
+                  <li><a href="#services">47TechPay</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#">Services We Offer <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#contact">Custom App Development</a></li>
+                  <li><a href="#contact">Web Hosting</a></li>
+                  <li><a href="#contact">Cloud Computing</a></li>
+                  <li><a href="#contact">API Integration</a></li>
+                  <li><a href="#contact">SAAS</a></li>
+                  <li><a href="#contact">Web Development</a></li>
+                  <li><a href="#contact">Technical Support</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <!-- <li><a class="nav-link scrollto" href="#clients">Partners</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Consultation</a></li>
-              <li class="dropdown"><a href="#"><span>Our Services</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">App Development</a></li>
-                  <li><a href="#">Web Hosting</a></li>
-                  <li><a href="#">Cloud Computing</a></li>
-                  <li><a href="#">API Integration</a></li>
-                  <li><a href="#">SAAS</a></li>
-                  <li><a href="#">Technical Support</a></li>
-                </ul>
-              </li>
+              <li><a href="#contact">Consultation</a></li>
               <li><a href="#Newsletter">Newsletter</a></li>
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li>
@@ -139,7 +155,8 @@
 
   <!-- #######slider hero section############ -->
 <!-- <section class="carousel"> -->
-  <img src="https://images.unsplash.com/photo-1636955816868-fcb881e57954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHNvZnR3YXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+
+  <!-- <img src="https://images.unsplash.com/photo-1636955816868-fcb881e57954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHNvZnR3YXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt=""> -->
 
   <div class="carousel">
   <div class="slider">
@@ -165,7 +182,7 @@
               </div>
               <div class="col-lg-6 hero-image" data-aos="zoom-out" data-aos-delay="0">
                 <!-- <img src="https://images.unsplash.com/photo-1636955816868-fcb881e57954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHNvZnR3YXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt=""> -->
-                <img src="assets/img/hero-service-images/elevate-business-digitally.png" alt="">
+                <img src="assets/img/hero-service-images/elevate-business-digitally2.png" alt="">
               </div>
             </div>
           </div>
@@ -259,25 +276,14 @@
   
   <div class="directional_nav">
     <div class="previous_btn" title="Previous">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-        <g>
-          <g>
-            <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
-        c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
-            <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
-          </g>
-        </g>
-      </svg>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+        <g><path d="M761.8,126.1L354.3,501l407.5,376.9V990L238.2,501L761.8,10V126.1z"/></g>
+        </svg>
     </div>
     <div class="next_btn" title="Next">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-        <g>
-          <g>
-            <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
-            <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
-          </g>
-        </g>
-      </svg>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+        <g><path d="M611.6,498.8L254.4,856v134l491.2-491.2L254.4,10v134L611.6,498.8z"/></g>
+        </svg>
     </div>
   </div><!-- End // .directional_nav -->
 </div>
@@ -287,6 +293,9 @@
 
 <!-- ------Main Content--- -->
   <main id="main">
+    <a href="https://api.whatsapp.com/send?phone=254711377232" target="_blank" class="whatsapp-icon">
+      <img src="assets/img/whatsapp.png" alt="WhatsApp Icon">
+  </a>
      <!-- ======= Counts Section ======= -->
      <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
@@ -347,14 +356,13 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="content">
               <h3>Who We Are</h3>
-              <h2>Leading provider of technology solutions the needs of our expanding clients.</h2>
+              <h2>A leading provider of technology solutions that meet the needs of our expanding clients.</h2>
               <p>
                 Since our inception in 2005, we have remained agile in the delivery of the best solutions.
                 <br>Through our rapid adoption of new technology, we are 
-                competitive, up to date, and the most reliable technology partner.<br>
-                We are an ISO 9001-2008 certified company that has received 
-                numerous awards for our extinguished services.
-              .
+                competitive, up to date, and a reliable technology partner.<br>
+                We are an ISO 9001-2008 certified.
+              
               </p>
               <!-- <div class="text-center text-lg-start">
                 <a href="#values" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
@@ -364,42 +372,78 @@
               </div> -->
             </div>
           </div>
+          <div class="we-do">
+            <div class="what-we-do">
+              <h3>
+                What We Do
+              </h3>
+              <div class="text-p">
+                <p>
+                  We translate ideas into custom software. <br>
+                  We pride ourselves in our capability to breathe <br>
+                  life to your brand, from creation to execution and validation.
+                </p>
+              </div>
+            </div>
+            <div class="we-do-illustrated">
+                    <!-- <div class="window col-lg-6 d-flex align-items-center">
+                      <div id="drag-container">
+                        <div id="spin-container">
+                          <!-- Add your images (or video) here -->
+                          <!-- <img src="assets/img/spin-container/Android-App.png"alt="We do custom android development">
+                          <img src="assets/img/spin-container/ios-app-dev.png" alt="We do custom ios development">
+                          <img src="assets/img/spin-container/AI-image.png" alt="Lets Venture into Artificial Intelligence and the Internet of Things.">
+                          <img src="assets/img/spin-container/cloud-image.png" alt="We offer cloud hosting services">
+                          <img src="assets/img/spin-container/Iot-image.png" alt="internet of Things">
+                          <img src="assets/img/spin-container/web-Dev-n-design.png" alt="Get your website up and running."> -->
+                          
+                          <!-- Example image with link -->
+                          <!-- <a target="_blank" href="https://47payday.com/"> -->
+                            <!-- <h1>
+                              Android and Ios Apps
+                            </h1> -->
+                          <!-- </a>
+                                </div>
+                        <div id="ground"></div>
+                      </div> -->
+                      
+                      <!-- <div id="music-container"></div>
+                    </div>  -->
+                    <div id="wrap-sh-slider">
+                      <a  class="control_next">></a>
+                      <a  class="control_prev"><</a>
+                    <div class="sh-slider">
+                      
+                      <ul>
+                        <li><img src="assets/img/spin-container/ios-app-dev.png" alt="We do custom ios development">
+                          <p>iOS Apps.</p>
+                        </li>
+                        <li><img src="assets/img/spin-container/AI-image.png" alt="Lets Venture into Artificial Intelligence and the Internet of Things.">
+                          <p>ChatBots.</p>
+                        </li>
+                        <li> <img src="assets/img/spin-container/cloud-image.png" alt="We offer cloud hosting services">
+                          <p>Cloud Computing.</p>
+                        </li>
+                        <li> <img src="assets/img/spin-container/Iot-image.png" alt="internet of Things">
+                          <p>IoT Integration.</p>
+                        </li>
+                        <li><img src="assets/img/spin-container/web-Dev-n-design.png" alt="Get your website up and running.">
+                          <p>Web Development.</p>
+                        </li>
+                        <li><img src="assets/img/spin-container/Android-App.png"alt="We do custom android development">
+                          <p>Android apps.</p>
+                        </li>
+                      </ul>  
+                    </div>
+                      </div>
+                    
+            </div>
+          </div>
 
           <!-- <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
             <img src="about-img.jpg" class="img-fluid" alt="">
           </div> -->
 
-          <div class="window col-lg-6 d-flex align-items-center">
-            <div id="drag-container">
-              <div id="spin-container">
-                <!-- Add your images (or video) here -->
-                <img src="assets/img/spin-container/Android-App.png"alt="We do custom android development">
-                <img src="assets/img/spin-container/ios-app-dev.png" alt="We do custom ios development">
-                <img src="assets/img/spin-container/AI-image.png" alt="Lets Venture into Artificial Intelligence and the Internet of Things.">
-                <img src="assets/img/spin-container/cloud-image.png" alt="We offer cloud hosting services">
-                <img src="assets/img/spin-container/Iot-image.png" alt="internet of Things">
-                <img src="assets/img/spin-container/web-Dev-n-design.png" alt="Get your website up and running.">
-                
-                <!-- Example image with link -->
-                <a target="_blank" href="https://47payday.com/">
-                  <!-- <h1>
-                    Android and Ios Apps
-                  </h1> -->
-                </a>
-            
-                <!-- Example add video  -->
-                <!-- <video controls autoplay="autoplay" loop>
-                  <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
-                </video> -->
-            
-                <!-- Text at center of ground -->
-                <!-- <p>TechBiz Products and services.</p> -->
-              </div>
-              <div id="ground"></div>
-            </div>
-            
-            <div id="music-container"></div>
-          </div>
 
         </div>
       </div>
@@ -418,7 +462,7 @@
             </div> 
           </div>
           <div class="col" data-aos="fade-up">
-            <img src="assets/img/mission-icon.png" data-aos="fade-up" alt="Mission Logo">
+            <img src="assets/img/mission-icon.png" data-aos="fade-up" alt="Mission Logo" class="mission">
             <div class="mission-content img-fluid" data-aos="fade-up">
             <h2>Our Mission</h2>
             <p>Transform ideas into reality by using smart & innovative 
@@ -718,6 +762,38 @@
               <div>
                 <h4>Healthcare</h4>
                 <!-- <p>We develop solutiions for healthcare institutions to manage patients data and to efficiently monitor their wellbeing.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box img-fluid" data-aos="fade-up" data-aos-delay="10">
+              <img src="assets/img/we_serve/real_estate.png" alt="">
+              <div>
+                <h4>Real Estate</h4>
+                <!-- <p>We provide communication infrastructures that meet our clients specific communication needs.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box img-fluid" data-aos="fade-up" data-aos-delay="10">
+              <img src="assets/img/we_serve/loud_speaker.png" alt="">
+              <div>
+                <h4>On-Demand Solutions</h4>
+                <!-- <p>We provide communication infrastructures that meet our clients specific communication needs.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box img-fluid" data-aos="fade-up" data-aos-delay="10">
+              <img src="assets/img/we_serve/map.png" alt="">
+              <div>
+                <h4>Travel and Hospitality</h4>
+                <!-- <p>We provide communication infrastructures that meet our clients specific communication needs.</p> -->
+              </div>
+            </div>
+
+            <div class="col-md-6 icon-box img-fluid" data-aos="fade-up" data-aos-delay="10">
+              <img src="assets/img/we_serve/restaurant.png" alt="">
+              <div>
+                <h4>Food & Restaurant</h4>
+                <!-- <p>We provide communication infrastructures that meet our clients specific communication needs.</p> -->
               </div>
             </div>
 
@@ -1570,7 +1646,8 @@
 
             <div class="contact_address gy-4">
 
-              <div class="col-md-6">
+              <div class="contact_address_items">
+                <div class="col-md-6">
                 <div class="info-box">
                   <div class="icon-hover"><i class="bi bi-geo-alt"></i></div>
                   <h3>Address</h3>
@@ -1597,10 +1674,19 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <div class="icon-hover"><i class="bi bi-clock"></i></div>
-                  <h3>Open Hours</h3>
+                  <h3>Business Hours</h3>
                   <p>Mon - Fri: 8:30am-5:00pm, <br> Sat: 9:00am-12:30pm.</p>
                 </div>
               </div>
+              </div>
+
+              <div class="our_location">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.9354562536257!2d39.66808036734301!3d-4.072933030619743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184013b0f1a9470b%3A0xea5fd3fe6c5be645!2sTechBiz%20Limited!5e0!3m2!1sen!2ske!4v1688377342079!5m2!1sen!2ske"
+                  width="600" height="380px" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            
 
             </div>
 

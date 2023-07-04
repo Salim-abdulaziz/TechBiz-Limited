@@ -8,6 +8,26 @@ setTimeout(function() {
                 var currentIndex = 0;
                 var timeout;
                 
+
+                var hammer = new Hammer(this);
+
+                hammer.on('swipeleft', function() {
+                  if (currentIndex < ($slides.length - 1)) {
+                    move(currentIndex + 1);
+                  } else {
+                    move(0);
+                  }
+                });
+            
+                hammer.on('swiperight', function() {
+                  if (currentIndex !== 0) {
+                    move(currentIndex - 1);
+                  } else {
+                    move($slides.length - 1);
+                  }
+                });
+
+
                 function move(newIndex) {
                   var slideLeft, animateLeft;
                   
@@ -101,4 +121,20 @@ setTimeout(function() {
                 advance();
               });
   // ################END OF HERO SLIDER JS ################
-}, 100); // 0.1 seconds delay (1000 milliseconds)
+}, 100); // 0.1 seconds delay (1000 millisecond
+
+// ###########dropdown-technologies#################
+$(document).ready(function() {
+  
+  $(".selLabel").click(function () {
+    $('.dropdown').toggleClass('active');
+  });
+  
+  $(".dropdown-list li").click(function() {
+    $('.selLabel').text($(this).text());
+    $('.dropdown').removeClass('active');
+    $('.selected-item p span').text($('.selLabel').text());
+  });
+  
+});
+// ##########################################################

@@ -274,6 +274,5 @@ jQuery(document).ready(function ($) {
   $('a.control_next').click(function () {
     moveRight();
   });
-
+  setInterval(moveRight, 2500);
 });    
-

@@ -721,7 +721,7 @@ height: 10px;
 
 .slide .container .hero-image, .slide .container  .hero-image2{
   left: 54%;
-  top: 24%;
+  top: 15%;
   width: 60vh;
   height: 300vh;
   position: absolute;
@@ -1265,13 +1265,14 @@ color: transparent;
   float: left;
   margin: 0;
   padding: 0;
-  height: 8vh;
+  height: 13vh;
+  /* height: fit-content; */
   text-align: center;
   border-radius: 4px;
   overflow: hidden;
 }
 .sh-slider> ul> li> img{
-height: 8vh;
+height: 5vh;
 width:auto;
 transition: all 0.4s ease-in-out;
 }
@@ -1537,7 +1538,7 @@ a.control_next {
 }
 
 .col-lg-3.col-md-6 .count-box:hover{
-  /* box-shadow: inset 0 -300px #ffa6007f, 0 30px 20px black; */
+  box-shadow: inset 0 -300px #073c8a6a, 0 30px 20px rgba(58, 60, 2, 0.566);
   color: #090469;
   /* transform: scale(1.05); */
 }
@@ -1684,22 +1685,25 @@ color: #fafafa;
 width: 100%;
 }
 .features .container .row1 .col-lg-6 .row{
-  display: flex;
   position: relative;
 }
-
+.features .row .col-md-6{
+  width: 100%;
+  height: auto;
+}
 .features .feature-box {
   box-shadow: 0px 0 10px #012a7074;
   transition: 0.3s;
   height: auto;
   display: flex;
-  border-radius: 10px;
   width: 100%;
-  background-color: #20a120;
+  flex-wrap: wrap;
+  background-color: transparent;
+  justify-content: center;
 }
 .features .feature-box div ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .features .feature-box h3 {
@@ -1707,58 +1711,87 @@ width: 100%;
   color: #012970;
   font-weight: 700;
   padding-top: 4px;
-  margin-left: 0;
+  margin: 10px 0 0 4px;
   padding-left: 0;
   white-space: nowrap;
 }
 .features .feature-box> div{
-  
+  width: 30vh;
+  height: 7vh;
+  background-color: #00acee;
+  border-radius: 10px;
+  margin: 10px 8vh 5px 0;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
 }
-.feature-box div ul{
+
+.feature-box div ul li{
   padding: 4px;
   margin: 1px;
 	list-style: none;
 	position: relative;
-}
-.feature-box div ul li h3 a{
+  width: min-content;
   display: inline-block;
-	background-color: #bfd60c;
-  line-height: 60px;
+  left: -45px;
 }
-.feature-box div ul ul{
+
+/* .feature-box div ul li ul{
+  position: relative;
+  display: list-item;
+} */
+.feature-box div ul li ul li{
 	display: none;
-	position: absolute; 
-	top: 60px; 
+	position: relative; 
+  transition: 4s ease;
 }
 /* Display Dropdowns on Hover */
-.feature-box div ul li:hover > ul {
-	display:inherit;
-  position: absolute;
-  background-color: #000080;
+.feature-box div:hover ul li ul li {
+	display: inline-block;
+  position: relative;
+  list-style: circle;
+  background-color: #030369;
+  color: white;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  z-index: 6;
+  top: -10px;
+  margin-top: 2px;
+  align-items: center;
+  transform: scale(1.05);
+  white-space: nowrap;
+  left: 3vh;
+  box-shadow: 0 0 10px #fff;
 }
 
-.feature-box div ul li a:after { content:  ' +'; }
-.feature-box div ul li a:only-child:after { content: ''; }
+.feature-box div i:after { content:  '+'; }
+.feature-box div i:only-child:after { content: ' '; }
 
-.features .feature-box i {
+.features .feature-box> div> i {
   font-size: 1.75rem;
   font-weight: 900;
-  background: var(--secondary-color);
+  background: transparent;
   top: 50%;
   left: 50%;
   width: 28px;
-  height: 30px;
+  height: 28px;
   align-items: center;
   border-radius: 50%;
-  margin-right: 5px;
+  margin:1.5vh 5px 5px 5px;
   transition: 0.3s;
+  color: #ffffff;
 }
-
-.features .feature-box:hover i {
-  border-radius: 50%;
-  transform: rotate(360deg);
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+.features .feature-box div:hover {
+  background-color: #013578;
+}
+.features .feature-box div:hover ul h3{
+color: #fff;
+}
+.features .feature-box div:hover i {
+  transform: scale(.1);
+  background-color: transparent;
+  color: transparent;
 }
 
 /* .features .feture-tabs {
@@ -3131,16 +3164,15 @@ background-color: transparent;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: navy;
+  background: linear-gradient(90deg, #6228d7be 0%, #ee2b7ce1 56%, #f9ce3483 100%);
   border: 0;
   padding: 10px 30px;
   color: #fff;
-  transition: 0.4s;
   border-radius: 40px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: orange;
+  background: linear-gradient(90deg, #f9ce34 0%, #ee2b7c 56%, #6228d7 100%);
 }
 
 @keyframes animate-loading {
@@ -3708,18 +3740,19 @@ background-color: transparent;
   bottom: 0;
   border: 0;
   background: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0 30px;
   margin: 3px;
-  background: navy;
+  background: linear-gradient(90deg, #f9ce34 0%, #6b012d85 56%, #6228d7e2 100%);
   color: #fff;
+  font-weight: bold;
   transition: 0.3s;
   border-radius: 40px;
 }
 
 .footer .footer-newsletter form input[type=submit]:hover {
-  background: orange;
-  color:orange;
+  background: linear-gradient(90deg, #6228d7c3 0%, #f70168a7 76%, #e4c555d2 100%);
+  color:#dee0f2;
   border-radius: 40px;
 }
 
@@ -3791,7 +3824,7 @@ margin-bottom: 3vh;
                       .social-footer> ul li a {
                         width: 25px;
                         height: 25px;
-                        background-color: #fff;
+                        background-color: transparent;
                         text-align: center;
                         line-height: 7px;
                         font-size: 2.1875rem;
@@ -3812,7 +3845,6 @@ margin-bottom: 3vh;
                       
                       .social-footer> ul li a:hover .icon{
                         color: #fff;
-
                       }
                       
                       .social-footer> ul li a:before {
@@ -3824,7 +3856,6 @@ margin-bottom: 3vh;
                         height: 100%;
                         background: #f00;
                         transition: .5s;
-                        
                       }
                       
                       .social-footer> ul li a:hover:before {
@@ -3848,6 +3879,9 @@ margin-bottom: 3vh;
                       }
                       .social-footer> ul li:nth-child(5) a:before {
                         background: #000;
+                      }
+                      .social-footer> ul li:nth-child(6) a:before {
+                        background: #fd0101ed;
                       }
                       
 
@@ -4022,6 +4056,7 @@ margin-bottom: 3vh;
 	-o-animation-name: fadeOutRight;
 	animation-name: fadeOutRight;
 }
+
 .d-graphics{
   background-color:transparent;
   width:100%;

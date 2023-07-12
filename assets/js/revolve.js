@@ -131,7 +131,7 @@ jQuery(document).ready(function ($) {
   var wrapperPaddingLeft = 50;
   var wrapperPaddingRight = 50;
   var slideItem = 3;
-  var spead = 500;
+  var spead = 150;
   var slideMargin = 20;
   var sliderWraper = $('#wrap-sh-slider').width();
 
@@ -187,7 +187,8 @@ jQuery(document).ready(function ($) {
         height:slideHeight + slideExtraHeight / 2,
         marginTop: -slideExtraHeight / 4,
         marginLeft:-slideMargin,
-        marginRight:0, zIndex: 11
+        marginRight:0, 
+        zIndex: 11
       },spead
     );
                 
@@ -222,7 +223,7 @@ jQuery(document).ready(function ($) {
         height:slideHeight + slideExtraHeight / 2,
         marginTop: -slideExtraHeight / 4,
         marginLeft:-slideMargin,
-        marginRight:0,
+        marginRight:1,
         zIndex: 11
       },spead
     );

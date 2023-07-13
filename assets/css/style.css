@@ -2301,73 +2301,46 @@ height: 10vh;
 .services .service-box {
   box-shadow: 0px 0 30px #01297014;
   max-height: 80%;
-  padding: 60px 30px;
+  padding: 30px 30px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
   color: navy;
-  background-color: var(--background-color);
+  background-color: #ebecfc;
   transition: 0.5s;
   box-shadow: inset 0 -5px transparent;
+  height: 47vh;
 }
 
-/* .services .container .row{
-  /* background: linear-gradient(90deg, #090070bb 7%, #b46f0f4f 97%); */
-/* }  */
 .services .service-box .icon {
-  font-size: 2.25rem;
-  padding: 40px 20px;
+  font-size: 3.25rem;
+  padding: 10px 0 0 0;
   border-radius: 4px;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   display: inline-block;
   line-height: 0;
   transition: 0.3s;
+  height: 9vh;
 }
 
 .services .service-box h3 {
   color: navy;
   font-weight: 700;
 }
-/* .services .service-box :hover{
-  color: navy;
-} */
 
-.services .service-box .read-more i {
+.services .row .read-more i {
   line-height: 0;
   margin-left: 5px;
   font-size: 1.125rem;
 }
 
-.services .service-box.blue {
-  border-bottom: 3px solid navy;
+.services .service-box {
+  border-bottom: 3px solid rgb(0, 0, 128);
+  border-left: 3px  solid rgb(0, 0, 128);
+  border-top: 1px  solid rgb(99, 99, 183);
+  border-right: 1px  solid rgb(99, 99, 183);
 }
-
-.services .service-box.blue .icon {
-  color: navy;
-  background: #FFFDD0;
-}
-.services .service-box.blue .icon:hover{
-  color: #ffa500;
-}
-/* .services .service-box .read-more {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 8px 20px;
-  color: #FFFDD0;
-  margin-top: 1px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
-  background: navy;
-  box-shadow: 0px 5px 30px #051df066;
-  text-transform: uppercase;
-  white-space: nowrap;
-} */
 .custom-btn {
   z-index: 3;
   width: auto;
@@ -2376,13 +2349,15 @@ height: 10vh;
   border-radius: 5px;
   padding: 10px 25px;
   font-weight: bold;
-  background: #fff;
+  background: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: relative;
   outline: none;
   overflow: hidden;
   border-width: 0;
+  position: relative;
+  top: -40px;
+  left: 30%;
 }
 .custom-btn:hover{
   box-shadow:   2px 2px 4px 0 #ffffffe4,
@@ -2391,13 +2366,13 @@ height: 10vh;
   inset 2px 2px 4px 0 #e8e7e7;
   transform: scale(1.1);
 }
-.services .service-box .read-more {
+.services .row .read-more {
   border: none;
   transition: all 0.3s ease;
   overflow: hidden;
   color: #ffffff;
 }
-.services .service-box .read-more:after {
+.services .row .read-more:after {
   position: absolute;
   content: " ";
   z-index: -1;
@@ -2405,115 +2380,33 @@ height: 10vh;
   left: 0;
   width: 35vh;
   height: 7vh;
-   background-color: #1fd1f9;
+   background-color: #017f9c;
   background-image: linear-gradient(315deg, #1fd1f9 0%, #02075b 74%);
   transition: all 0.3s ease;
 }
-.services .service-box .read-more:hover {
+.services .row .read-more:hover {
   background: transparent;
   color: #a9d4d7;
   }
-.services .service-box  .read-more:hover:after {
-  transform: scale(2) rotate(360deg);  
+.services .row  .read-more:hover:after {
+  transform: scale(2) rotate(180deg);  
   -webkit-transform: scale(2) rotate(180deg);
 }
 
-/* .services .service-box.blue >p{
-margin-bottom: 5vh;
-} */
-/* .services .service-box .read-more:hover{
-  color: #ffa500;
-  background: white;
-  transform: scale(1.1);
-} */
 
 .services .service-box:hover, .service-box.red:hover, .service-box.orange:hover, .service-box.purple:hover, .service-box.pink:hover, .service-box.green:hover{
-  background: radial-gradient(50vh at 10.6% 8.8%, #7bc9f6 0%, #02305e 100%);
+  background: radial-gradient(50vh at 10.6% 8.8%, #7bc9f6 10%,#02305e 100%);
+  /* background: linear-gradient(to left, #7bc9f6 0%, #02305e 100%); */
+  
   border-bottom: 3px solid #faffff;
-    box-shadow: inset 0 -300px #02305e, 0 30px 20px #7bc9f6;
-
+    box-shadow: inset  420px 0 0 0 #02305e, inset -20px 0 0 0 transparent;
 }
-.services .service-box:hover{
-  transform: scale(1.01);
-}
-.services .service-box.orange {
-  border-bottom: 3px solid navy;
+.services .service-box:hover .icon{
+  color: #afe5fa;
 }
 
-.services .service-box.orange .icon {
-  color: #000080 ;
-  background: #FFFDD0;
-}
-.services .service-box.orange .icon:hover{
-  color: #f68c09;
-}
-
-/* .services .service-box.orange .read-more {
-  color: #FFFDD0;
-  margin-top: 1px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
-  background: navy;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
-  white-space: nowrap;
-} */
-/* .services .service-box.orange .read-more:hover{
-  color: #ffa500;
-  background: white;
-  transform: scale(1.1);
-} */
-
-
-.services .service-box.green {
-  border-bottom: 3px solid navy;
-}
-
-.services .service-box.green .icon {
-  color: navy;
-  background: #FFFDD0;
-}
-.services .service-box.green .icon:hover{
-  color: #ffa500;
-}
-
-/* .services .service-box.green .read-more {
-  color: #FFFDD0;
-  margin-top: 1px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
-  background: navy;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
-  white-space: nowrap;
-} */
-
-
-/* .services .service-box.green .read-more:hover {
-  color: #ffa500;
-  margin-top: 2px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
-  background: white;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
-  transform: scale(1.1);
-} */
-
-.services .service-box.red {
-  border-bottom: 3px solid  navy;
-}
-.services .service-box.red icon{
-  height: 4vh;
-}
-.services .service-box.red img{
-height: 5vh;
+.services .service-box img{
+padding-top: 5px;
 width: fit-content;
 aspect-ratio: 1;
 margin: 0;
@@ -2521,102 +2414,19 @@ transition: 2s;
 box-sizing: unset;
 background-color: transparent;
 }
-.services .service-box.red img:hover{
+.services .service-box img:hover{
   background-color: transparent;
   transform: rotate(30deg);
 }
 
-/* .services .service-box.red .read-more {
-  color: #FFFDD0;
-  margin-top: 1px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
-  background: navy;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
-  white-space: nowrap;
-} */
 
-/* .services .service-box.red .read-more:hover{
-  color: #ffa500;
-  margin-top: 2px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition: 0.5s;
-  background: white;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
-  transform: scale(1.1);
-} */
-
-.services .service-box.purple {
-  border-bottom: 3px solid  navy;
-}
-
-.services .service-box.purple .icon {
+.services .service-box .icon {
   color:  navy;
-  background: #fffdd0;
+  background: transparent;
 }
-.services .service-box.purple .icon:hover{
+.services .service-box .icon:hover{
   color:orange;
 }
-
-/* .services .service-box.purple .read-more {
-  color: #FFFDD0;
-  margin-top: auto;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition:transform 0.5s ease;
-  background: navy;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
-  white-space: nowrap;
-} */
-
-
-/* .services .service-box.service-box.purple .read-more:hover{
-  color: #ffa500;
-  background: white;
-  transform: scale(1.1);
-} */
-
-.services .service-box.pink {
-  border-bottom: 3px solid  navy;
-}
-
-.services .service-box.pink .icon {
-  color:  navy;
-  background: #FFFDD0;
-}
-.services .service-box.pink .icon:hover{
-  color:orange;
-}
-
-/* .services .service-box.pink .read-more {
-  color: #FFFDD0;
-  margin-top: auto;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  transition:transform 0.5s ease;
-  background: navy;
-  box-shadow: 0px 5px 30px rgba(5, 29, 240, 0.4);
-  text-transform: uppercase;
-  white-space: nowrap;
-} */
-.services .service-box.pink >p{
-  margin-bottom: 5.3vh;
-  }
-
-/* .services .service-box.pink .read-more:hover{
-  color: #ffa500;
-  background: white;
-  transform: scale(1.1);
-} */
 
 .services .service-box:hover h3,
 .services .service-box:hover p {

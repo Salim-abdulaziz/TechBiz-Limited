@@ -106,6 +106,19 @@ window.addEventListener("DOMContentLoaded", function() {
   /**
    * Back to top button
    */
+// scrolled color ribbon o counts
+window.addEventListener('scroll', function() {
+  var myDiv = document.getElementById('change-colour-scrolled');
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 100) {
+    myDiv.style.background = 'radial-gradient(1224px at 10.6% 8.8%, rgb(255, 255, 255) 0%, #2d2dc5bc 100.2%)';
+  }else{
+    myDiv.style.background='linear-gradient(121.7deg, #a0c4fb, #2d2dc5f0 75%)';
+  }
+});
+// end of scrolled color ribbon o counts
+
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {

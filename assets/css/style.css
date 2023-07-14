@@ -749,7 +749,7 @@ height: 10px;
 
 .slide .container .hero-image{
   left: 54%;
-  top: 15%;
+  top: 10%;
   width: 60vh;
   height: auto;
   position: absolute;
@@ -759,7 +759,7 @@ height: 10px;
 }
 .slide .container  .hero-image2{
   left: 59%;
-  top: 10%;
+  top: 9%;
   width: 100vh;
   height: auto;
   position: absolute;
@@ -773,7 +773,7 @@ height: 10px;
 .slide .container  .hero-image2 img{
   aspect-ratio: 1;
   position: relative;
-  width: 500px;
+  width: 400px;
   object-fit: contain;
   margin-top: 28%;
   height: auto;
@@ -781,16 +781,16 @@ height: 10px;
 .slide .container  .hero-image img{
   aspect-ratio: 1;
   position: relative;
-  width: 100%;
+  width: auto;
   left: 50%;
   margin-top: 50%;
-  height: auto;
+  height: 50vh;
   transform: translate(-50%, -50%);
   animation: moveUpDown 5s infinite ease-in-out;
 }
 .slide .container  .hero-image3{
   left: 60%;
-  top: 50%;
+  top: 10%;
   width: 60vh;
   height: auto;
   position: absolute;
@@ -800,7 +800,8 @@ height: 10px;
 .slide .container  .hero-image3 img{
   aspect-ratio: 1;
   position: relative;
-  width: 500px;
+  width: 400px;
+  margin-top: 45%;
   object-fit: contain;
   height: auto;
   transform: translate(-50%, -50%);
@@ -998,6 +999,15 @@ color: transparent;
   right: 5vh !important;
 }
 }
+@media (max-width:1285px){
+  #hero-intro> h1, #hero-intro1> h1, #hero-intro2> h1, #hero-intro3> h1, #hero-intro4> h1, #hero-intro5> h1, #hero-intro6> h1  {
+    font-size: 2.4rem;
+    white-space: wrap;
+  }
+  #hero-intro> h2, #hero-intro1> h2, #hero-intro2> h2, #hero-intro3> h2, #hero-intro4> h2, #hero-intro5> h2, #hero-intro6> h2 {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 991px) {
   .hero {
     height: auto;
@@ -1028,7 +1038,7 @@ color: transparent;
     top: 80px;
     left: 30%;
     position: absolute !important;
-    height: 40vh;
+    height: 80vh;
     width: 100%;
   }
 
@@ -1059,22 +1069,7 @@ color: transparent;
   .header{
   padding: 0;
 }
-/* .slide .container .text-displayed{
-  width: 100%;
-} */
-/* #hero-intro> h1, #hero-intro1> h1, #hero-intro2> h1, #hero-intro3> h1, #hero-intro4> h1, #hero-intro5> h1, #hero-intro6> h1 {
-  margin: 30% 10% 0 100px;
-  font-size: 4.5vh;
-  background: #71797E;
-  border-radius: 10px;
-}
-#hero-intro> h2, #hero-intro1> h2, #hero-intro2> h2, #hero-intro3> h2, #hero-intro4> h2, #hero-intro5> h2, #hero-intro6> h2 {
-  color:#ffffff;
-  margin: 10px 10% 0 100px;
-  font-size: 3.5vh;
-  text-shadow: 4px 4px 8px #070012c9;
-  background: #71797E;
-} */
+
 }
 
 @media (max-width: 768px) {
@@ -1622,11 +1617,11 @@ a.control_next {
   height: 10vh;
   width: 100%;
   background:linear-gradient(121.7deg, #a0c4fb, #2d2dc5f0 75%);
-
+  transition: background 0.5s;
 }
 
 .counts .count-box {
-  display: flex;
+display: flex;
   align-items: center;
   padding: 0px 5px;
   border-radius: 10px;
@@ -1918,10 +1913,16 @@ width: 100%;
 }
 .features .container .row1 .col-lg-6 .row{
   position: relative;
+  margin-top: 0;
+  padding: 0;
 }
 .features .row .col-md-6{
   width: 100%;
   height: auto;
+}
+.features .container .section-header {
+  margin: 0;
+  padding: 0;
 }
 .features .feature-box {
   /* box-shadow: 0px 0 10px #012a7074; */
@@ -1939,10 +1940,9 @@ width: 100%;
   flex-wrap: wrap;
 }
 .features .feature-box h3 {
-  font-size: 1.25rem;
-  color: #012970;
+  font-size: 1.1rem;
+  color: #ffffff;
   font-weight: 700;
-  padding-top: 4px;
   margin: 10px 0 0 4px;
   padding-left: 0;
   white-space: nowrap;
@@ -1950,7 +1950,7 @@ width: 100%;
 .features .feature-box> div{
   width: 33vh;
   height: 7vh;
-  background-color: #00acee;
+  background-color: #093387;
   border-radius: 10px;
   margin: 10px 8vh 5px 0;
   justify-content: flex-start;
@@ -1976,30 +1976,73 @@ width: 100%;
 	display: none;
 	position: relative; 
   transition: 4s ease;
-
 }
 /* Display Dropdowns on Hover */
 .feature-box div:hover ul li ul li {
 	display: inline-block;
   position: relative;
   list-style: circle;
-  background-color: #030369;
+  background-color: #4a75ae;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1rem;
   z-index:19 !important;
-  top: -80px;
+  top: -8%;
   margin-top: 2px;
   align-items: center;
-  transform: scale(1.05);
+  opacity: 1;
   white-space: nowrap;
   left: 3vh;
-  box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 3px #0d0d17;
   width: 17vh;
   height: 4.5vh;
   margin: 2px 8vh 5px 0;
 }
-
+@media (max-width:960px) {
+  .features .container .section-header h2{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+ 
+  .features .feature-box> div{
+    width: 19.7vh;
+    height: 6vh;
+}
+  .features .feature-box h3 {
+    font-size: 0.7rem;
+  }
+  .feature-box div ul li{
+    padding: 4px;
+    margin: 1px;
+    list-style: none;
+    position: relative;
+    width: min-content;
+    display: inline-block;
+    left: -45px;
+  }
+  .feature-box div:hover ul li ul li {
+    display: inline-block;
+    position: relative;
+    list-style: circle;
+    background-color: #030369;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    z-index:19 !important;
+    top: -8%;
+    margin-top: 2px;
+    align-items: center;
+    transform: scale(1.05);
+    white-space: nowrap;
+    left: 3vh;
+    box-shadow: 0 0 5px #b5c3e8;
+    width: 15vh;
+    height: 4.5vh;
+    margin: 2px 8vh 5px 0;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .feature-box div i:after { content:  '+'; }
 .feature-box div i:only-child:after { content: ' '; }
 
@@ -2018,7 +2061,7 @@ width: 100%;
   color: #ffffff;
 }
 .features .feature-box div:hover {
-  background-color: #013578;
+  background-color: #6e8db6;
 }
 .features .feature-box div:hover ul h3{
 color: #fff;
@@ -3863,7 +3906,7 @@ background-color: transparent;
 --------------------------------------------------------------*/
 .footer {
   background: var(--background-color);
-  padding: 0 0 30px 0;
+  padding: 0 0 0px 0;
   font-size: 0.875rem;
 }
 
@@ -4046,6 +4089,11 @@ margin-bottom: 3vh;
   line-height: 26px;
 }
 
+.footer .container-credits{
+  /* background:linear-gradient(121.7deg, #a0c4fb, #2d2dc5f0 75%); */
+  background: radial-gradient(1224px at 10.6% 8.8%, rgb(255, 255, 255) 0%, #2d2dc5bc 100.2%);
+}
+
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
@@ -4057,6 +4105,10 @@ margin-bottom: 3vh;
   text-align: center;
   font-size: 0.8125rem;
   color: #012970;
+}
+.footer .credits a{
+  color: #fff;
+  font-weight: 900;
 }
 
 /* ########### START OF d3.js vector on technologies################## */

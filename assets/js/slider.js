@@ -88,7 +88,7 @@ setTimeout(function() {
                     } else {
                       move(0);
                     }
-                  }, 5000);
+                  }, 9000);
                 }
                 
                 $('.next_btn').on('click', function() {

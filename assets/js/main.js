@@ -112,9 +112,9 @@ window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
 
   if (scrollPosition > 100) {
-    myDiv.style.background = 'radial-gradient(1224px at 10.6% 8.8%, rgb(255, 255, 255) 0%, #2d2dc5bc 100.2%)';
+    myDiv.style.background = 'linear-gradient(121.7deg, #a0c4fb, #2d2dc5f0 75%)';
   }else{
-    myDiv.style.background='linear-gradient(121.7deg, #a0c4fb, #2d2dc5f0 75%)';
+    myDiv.style.background='#2d2dc5f0';
   }
 });
 // end of scrolled color ribbon o counts

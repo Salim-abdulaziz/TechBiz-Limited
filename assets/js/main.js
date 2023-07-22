@@ -112,7 +112,7 @@ window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
 
   if (scrollPosition > 100) {
-    myDiv.style.background = 'linear-gradient(121.7deg, #a0c4fb, #2d2dc5f0 75%)';
+    myDiv.style.background = 'linear-gradient(121.7deg, #fff, #2d2dc5f0 75%)';
   }else{
     myDiv.style.background='#2d2dc5f0';
   }

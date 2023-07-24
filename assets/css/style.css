@@ -36,6 +36,10 @@ a:hover {
   color: var(--primary-color);
   text-decoration: none;
 }
+hr{
+  color: #001edd;
+  margin: 0;
+}
 
 h1,
 h2,
@@ -151,7 +155,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: navy;
   text-transform: uppercase;
 }
 
@@ -280,7 +284,6 @@ background-clip: text;
   width: 100%;
   top: 0;
   position: relative;
-  /* background: #8C92AC; */
   background-color: #71797E;
   z-index: 997;
   color: #fff;
@@ -897,7 +900,7 @@ color: #ffffff;
   /* background: linear-gradient(121.7deg, rgb(41, 116, 250) 22.9%, rgb(67, 212, 255) 69%); */
   /* background: linear-gradient(121.7deg, #ffa500 2%, #e4cea5 22.9%, #3B56A5 69%, #ffa600a2 99%); */
   /* background:linear-gradient(121.7deg, #a0c4fb, #2d2dc5f0 75%); */
-  background: #2d2dc5f0;
+  background: #ebecfc;
 }
 
 .slider {
@@ -1193,22 +1196,20 @@ color: transparent;
 --------------------------------------------------------------*/
 .about{
   padding: 10px 0;
-  height: 54vh;
-  overflow-y: scroll;
+  height: auto;
 }
-.about .container-about{
-  margin: 0 4% 0 4%;
-}
-/* .about .container-about .row{
-  display: flex;
-  flex-wrap: wrap;
+.about .container{
+  margin: auto;
   width: 100%;
-  justify-content: space-evenly;
-} */
+  padding: 0;
+}
+.about .container .row{
+  width: fit-content;
+}
 .about .content, .about .we-do{
   background-color: var(--background-color);
   padding: 40px;
-  margin-top: 5vh;
+  margin-top: 2vh;
   box-shadow: 0px 0 5px #00008046;
   transition: 0.3s;
   font-size: 1.25rem;
@@ -1223,7 +1224,7 @@ color: transparent;
 .about h3 {
   font-size: 1.65rem;
   font-weight: 700;
-  color: #4154f1;
+  color: navy;
   text-transform: uppercase;
 }
 
@@ -1284,9 +1285,6 @@ color: transparent;
   .about .we-do{
     width: 100%;
   }
-  .about .container-about{
-    margin: 0;
-  }
 }
 
 /* ------------------- # Rotate in about #------------------- */
@@ -1318,7 +1316,6 @@ color: transparent;
   margin: 0;
   padding: 0;
   height: 13vh;
-  /* height: fit-content; */
   text-align: center;
   border-radius: 4px;
   overflow: hidden;
@@ -1327,6 +1324,11 @@ color: transparent;
 height: 5vh;
 width:auto;
 transition: all 0.4s ease-in-out;
+cursor: pointer;
+}
+.sh-slider> ul> li> img:hover{
+transform: scale(1.1);
+z-index: 10;
 }
 .sh-slider ul li p{
   white-space: nowrap;
@@ -1377,13 +1379,13 @@ a.control_next {
   right: 0;
   border-radius: 0 2px 2px 0;
 }
-@media (max-width:760px) {
+@media (max-width:960px) {
   #wrap-sh-slider{
-    width: 100%;
+    width: 80%;
   }
-  /* .sh-slider{
-    /* width: 100vh; */
-  /* }  */
+  .sh-slider> ul> li{
+    margin-left: 10px;
+  }
   
 }
 /*--------------------------------------------------------------
@@ -1415,11 +1417,10 @@ a.control_next {
 
 .vision-mission .container {
   width: 100%;
-  /* margin: 0 auto; */
-  padding: 0 15px;
+  margin: auto;
+  padding: 0;
   background-color:transparent;
   height: auto;
-  margin: 0 4% 0 7.4%;
   justify-content: center;
 }
 
@@ -1435,8 +1436,8 @@ a.control_next {
   width: 100%;
   overflow-y: hidden;
   box-shadow:0 0 1px #ffffff;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .vision-mission .col {
@@ -1448,7 +1449,7 @@ a.control_next {
   justify-content: center;
   box-shadow: 0px 0 5px #00008046;
   border-radius: 10px;
-  margin:2px 10px 0.5vh 1vh;
+  margin:2px 10px 0.5vh 10px;
 }
 .vision-mission .col img {
   max-width: auto;
@@ -1530,9 +1531,9 @@ a.control_next {
   text-align: center;
   transition: 0.3s;
   height: 95%;
-  background: linear-gradient(121.7deg, #ffffff, #2d2dc5f0 70%);
+  background: linear-gradient(121.7deg, #ffffff, #ebecfc 70%);
   border-radius: 10px;
-  color:#ffff;
+  color:navy;
 }
 
 .values .box img {
@@ -1552,7 +1553,7 @@ a.control_next {
 .values .box h3  {
   padding-top: 15px;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: navy;
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -3055,10 +3056,10 @@ background-color: transparent;
   margin-top: 0;
 }
 .contact_form .row > div> input, .contact_form .row > div> textarea{
-  box-shadow: 0 0 1px 1px  rgb(0, 51, 255);
+  box-shadow: 0 0 1px 1px  navy;
 }
 .contact_form .row > div> input:focus, .contact_form .row > div> textarea:focus{
-  box-shadow: 3px 2px 2px 1px  rgb(0, 51, 255);
+  box-shadow: 3px 2px 2px 1px navy;
 }
 .contact .container .row  .contact_address{
   display: flex;
@@ -3751,8 +3752,12 @@ background-color: transparent;
 
 /* newsletter secction */
 .newsletter{
-  padding: 20px 0;
+  padding: 10px 0;
   margin: 0;
+}
+.newsletter h2{
+  font-size: 1rem;
+  color: #0014ad;
 }
 .newsletter .footer-newsletter {
   padding: 30px 0;
@@ -3780,16 +3785,14 @@ background-color: transparent;
 
 .newsletter .footer-newsletter form input[type=email] {
   border: 0;
-  padding: 8px;
+  padding:2%;
   width: calc(100% - 140px);
   border-radius: 40px;
+  margin-left: 1.4vh;
+  border-color: transparent;
+  box-shadow: 0 0 1px 1px  rgba(177, 177, 239, 0.568);
 }
-
-.newsletter .footer-newsletter form input:focus{
-box-shadow: 3px 2px 2px 1px  rgb(0, 51, 255);
-}
-
-.newsletter .footer-newsletter form input[type=submit] {
+.newsletter .footer-newsletter form button{
   position: absolute;
   top: 0;
   right: 0;
@@ -3803,14 +3806,18 @@ box-shadow: 3px 2px 2px 1px  rgb(0, 51, 255);
   color: #fff;
   font-weight: bold;
   transition: 0.3s;
+  width: 17vh;
   border-radius: 40px;
 }
-
-.newsletter .footer-newsletter form input[type=submit]:hover {
+.newsletter .footer-newsletter form button:hover {
   background:  linear-gradient(121.7deg, #00ffdd 2%, #0014ad 22.9%, #3B56A5 69%, #024e556c 99%);
   color:#dee0f2;
-  border-radius: 40px;
 }
+.newsletter .footer-newsletter form input:focus{
+box-shadow: 3px 2px 0px 1px  #1c1e24 inset;
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer

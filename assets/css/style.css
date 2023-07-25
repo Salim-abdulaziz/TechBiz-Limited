@@ -499,7 +499,7 @@ color: #ffffff;
  {
   width: 100%;
 }
-
+/*--------------------------*/
 .navbar .getstarted,
 .navbar .getstarted:focus {
   background: #4154f1;
@@ -622,7 +622,7 @@ color: #ffffff;
   right: 0;
   left: 30%;
   bottom: 10%;
-  background: rgba(1, 22, 61, 0.9);
+  background: rgba(142, 177, 224, 0.9);
   transition: 0.3s;
 }
 
@@ -641,7 +641,7 @@ color: #ffffff;
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #0040f0;
+  background-color: white;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -698,7 +698,56 @@ color: #ffffff;
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+.header.header-scrolled .navbar-mobile a{
+color: navy;
+}
+.header.header-scrolled .navbar-mobile a:hover{
+  color: orange;
+  }
 
+  .navbar-mobile a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    bottom: 2px;
+    width: 0;
+    height: 3px;
+    background-color: rgb(244, 183, 71);
+    transition: 0.5s ease;
+    margin-left: 20px;
+    max-width: 75%;
+  }
+  .navbar-mobile a:hover::after,
+  .navbar-mobile a:focus::after
+   {
+    width: 90%;
+  }
+
+  /*---------mobile-drop-down-----------------*/
+  .navbar-mobile ul ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    bottom: 2px;
+    width: 0;
+    height: 3px;
+    background-color: rgb(34, 5, 255);
+    transition: 0.5s ease;
+    margin-left: 4%;
+    max-width: 75%;
+  }
+  .navbar-mobile ul ul li a:hover::after,
+  .navbar-mobile ul ul li a:focus::after
+   {
+    width: 100%;
+  }
+  /*--------------------------------------------*/
+
+/* .header.header-scrolled .navbar a {
+  color: #ffffff;
+  } */
 /*--------------------------------------------------------------
 # Hero Section and slider
 --------------------------------------------------------------*/
@@ -720,17 +769,17 @@ color: #ffffff;
   margin: 25% 0 0 100px;
   font-size: 3.125rem;
   font-weight: 700;
-  color: #ffffff;
+  color: navy;
   font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
-  text-shadow: 4px 4px 8px #070012c9;
+  text-shadow: 4px 4px 8px #d2bef2c9;
   background: transparent;
   border-radius: 10px;
 }
 #hero-intro> h2, #hero-intro1> h2, #hero-intro2> h2, #hero-intro3> h2, #hero-intro4> h2, #hero-intro5> h2, #hero-intro6> h2 {
-  color:#ffffff;
+  color:navy;
   margin: 9px 0 0 100px;
   font-size: 1.525rem;
-  text-shadow: 4px 4px 8px #070012c9;
+  text-shadow: 4px 4px 8px #d2bef2c9;
   background: transparent;
 }
 
@@ -1056,18 +1105,18 @@ color: transparent;
     margin: 27% 0 0 20px;
     font-size: 2.125rem;
     font-weight: 700;
-    color: #ffffff;
     font-family: 'Segoe UI', Tahoma ,Verdana, sans-serif;
     background: transparent;
     border-radius: 10px;
     padding: 0;
+    width: 70%;
   }
   #hero-intro> h2, #hero-intro1> h2, #hero-intro2> h2, #hero-intro3> h2, #hero-intro4> h2, #hero-intro5> h2, #hero-intro6> h2 {
-    color:#ffffff;
     margin: 10px 0 0 20px;
     font-size: 1.2rem;
     background: transparent;
     padding: 0;
+    width: 50%;
   }
   .slide .container .hero-image {
     text-align: center;
@@ -1216,10 +1265,18 @@ color: transparent;
   border-radius: 10px;
   height: auto;
 }
+.we-do .we-do-img img{
+  border-radius: 10px;
+  transition:transform 0.3s ease-in-out;
+}
+.we-do .we-do-img img:hover{
+transform: scale(1.1);
+}
 .we-do .text-p> p{
-  width: auto;
+  width: 90%;
+  margin-right: 1vh;
   justify-content: left;
-  overflow: wrap;
+  
 }
 .about h3 {
   font-size: 1.65rem;
@@ -1285,6 +1342,9 @@ color: transparent;
   .about .we-do{
     width: 100%;
   }
+  .we-do .we-do-img{
+  margin: auto auto auto 13%;
+  }
 }
 
 /* ------------------- # Rotate in about #------------------- */
@@ -1338,6 +1398,7 @@ z-index: 10;
 #wrap-sh-slider a{
   border-radius: 50%;
   box-shadow: 0 0 5px #0cb3e1;
+  margin: 1vh;
 }
 a.control_prev, a.control_next {
   position: absolute;
@@ -1522,9 +1583,6 @@ a.control_next {
 /*--------------------------------------------------------------
 # why us
 --------------------------------------------------------------*/
-.values .container .row .col-lg-4{
-  padding: 10px;
-}
 .values .box {
   padding: 30px;
   box-shadow: 0px 0 5px #0505fb46;
@@ -1534,6 +1592,8 @@ a.control_next {
   background: linear-gradient(121.7deg, #ffffff, #ebecfc 70%);
   border-radius: 10px;
   color:navy;
+  transition: 0.5s;
+  box-shadow: inset 0 -5px transparent;
 }
 
 .values .box img {
@@ -1559,7 +1619,12 @@ a.control_next {
 }
 
 .values .box:hover {
-  box-shadow: 0px 0 30px #01297014;
+  /* box-shadow: 0px 0 30px #01297014; */
+  color: #fff;
+  box-shadow: inset  800px 0 0 0 #02305e, inset -20px 0 0 0 transparent;
+}
+.values .box:hover h3{
+color: #fff;
 }
 
 .values .box:hover img {
@@ -1867,10 +1932,10 @@ color: #fafafa;
   flex-direction: column;
 }
 
-.features .container .row1 .col-lg-6 {
+.features .container .row .col-lg-6 {
 width: 100%;
 }
-.features .container .row1 .col-lg-6 .row{
+.features .container .row .col-lg-6 .row{
   position: relative;
   margin-top: 0;
   padding: 0;
@@ -1902,8 +1967,7 @@ width: 100%;
   font-size: 1.1rem;
   color: #ffffff;
   font-weight: 700;
-  margin: 10px 0 0 4px;
-  padding-left: 0;
+  margin: 5px 0 5px 10px;
   white-space: nowrap;
 }
 .features .feature-box> div{
@@ -1915,6 +1979,7 @@ width: 100%;
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
+  padding: 1.3vh;
 }
 
 .feature-box div ul li{
@@ -1970,7 +2035,7 @@ width: 100%;
   .features .feature-box h3 {
     font-size: 0.7rem;
   }
-  .feature-box div ul li{
+   .feature-box div ul li{
     padding: 4px;
     margin: 1px;
     list-style: none;
@@ -2002,7 +2067,7 @@ width: 100%;
     transform: translateY(0);
   }
 }
-.feature-box div i:after { content:  '+'; }
+/* .feature-box div i:after { content:  ''; }
 .feature-box div i:only-child:after { content: ' '; }
 
 .features .feature-box> div> i {
@@ -2018,7 +2083,7 @@ width: 100%;
   margin:1.5vh 5px 5px 5px;
   transition: 0.3s;
   color: #ffffff;
-}
+} */
 .features .feature-box div:hover {
   background-color: #147abe;
 }
@@ -2031,31 +2096,24 @@ color: #fff;
   color: transparent;
 }
 
-
-.features .container2 {
-  margin: 0 0 0 1vh;
-  width: 98%;
-  background-color: transparent;
-  justify-content: center;
-
-}
 .features .feature-icons .gradient{
   justify-content: center;
   display: flex;
 }
 
 .features .feature-icons h3 {
-  color: #4154f1;
+  color: navy;
   font-weight: 700;
   font-size: 1.6875rem;
-  margin-bottom: 20px;
+  margin:9vh auto 20px auto;
   text-align: center;
+  text-transform: uppercase;
 }
 
-.features .container2 .content{
+.features .container .content{
   width: 100%;
 }
-.features .container2 .content .row-boxes{
+.features .container .content .row-boxes{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -2347,7 +2405,7 @@ height: 9vh;
   /* background: linear-gradient(to left, #7bc9f6 0%, #02305e 100%); */
   
   border-bottom: 3px solid #faffff;
-    box-shadow: inset  420px 0 0 0 #02305e, inset -20px 0 0 0 transparent;
+    box-shadow: inset  500px 0 0 0 #02305e, inset -20px 0 0 0 transparent;
 }
 .services .service-box:hover .icon{
   color: #afe5fa;
@@ -3064,9 +3122,9 @@ background-color: transparent;
 .contact .container .row  .contact_address{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-content: center;
   width: 100%;
+  margin: auto
 }
 
 .contact_address .contact_address_items{
@@ -3074,7 +3132,7 @@ background-color: transparent;
   flex-wrap: wrap;
   align-content: center;
   width: auto;
-  margin-right: 3vh;
+  margin: auto;
   justify-content: center;
 }
 .our_location{
@@ -3094,7 +3152,7 @@ background-color: transparent;
   border-radius: 10px;
   min-height: 22vh;
   max-height: 22vh;
-  box-shadow: 0 0 3px #0468cc4d;
+  /* box-shadow: 0 0 3px #f1f3f64d; */
   margin: 1vh;
 }
 
@@ -3134,7 +3192,7 @@ background-color: transparent;
   color: #012970;
 }
 .contact .container .greating-text{
-  color:#005dfe;
+  color:navy;
 }
 
 .contact .php-email-form {
@@ -3208,7 +3266,7 @@ background-color: transparent;
 }
 
 .contact .php-email-form button[type=submit] {
-  background:  linear-gradient(121.7deg, #ffa500 2%, #e4cea5 22.9%, #3B56A5 69%, #ffa600a2 99%);
+  background: linear-gradient(90deg, rgba(245,134,32,1) 0%, rgba(59,86,165,1) 100%);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -3216,7 +3274,7 @@ background-color: transparent;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background:  linear-gradient(121.7deg, #00ffdd 2%, #0014ad 22.9%, #3B56A5 69%, #024e556c 99%);
+background: linear-gradient(90deg, rgba(59,86,165,1) 0%,rgba(245,134,32,1)  100%);
 }
 
 @keyframes animate-loading {
@@ -3234,13 +3292,17 @@ background-color: transparent;
     background: var(--background-color);
     padding: 20px 0 30px 0;
     border-radius: 10px;
-   width: 25vh;
+    width: 25vh;
     max-height: 22vh;
-    box-shadow: 0 0 30px #0468cc4d;
-    margin: 1vh;
+    box-shadow: 0 0 3px #0468cc4d;
+    margin: auto auto 1vh auto;
   }
 }
-
+@media (max-width: 760px){
+  .contact .info-box {
+  margin: 0.8vh;
+}
+}
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -3770,8 +3832,8 @@ background-color: transparent;
   margin: 0 0 10px 0;
   padding: 0;
   line-height: 1;
-  font-weight: 700;
-  color: #005dfe;
+  font-weight: 600;
+  color: navy;
 }
 
 .newsletter .footer-newsletter form {
@@ -3802,7 +3864,7 @@ background-color: transparent;
   font-size: 1.1rem;
   padding: 0 30px;
   margin: 3px;
-  background:  linear-gradient(121.7deg, #ffa500 2%, #e4cea5 22.9%, #3B56A5 69%, #ffa600a2 99%);
+  background: linear-gradient(90deg, rgba(245,134,32,1) 0%, rgba(59,86,165,1) 100%);
   color: #fff;
   font-weight: bold;
   transition: 0.3s;
@@ -3810,7 +3872,7 @@ background-color: transparent;
   border-radius: 40px;
 }
 .newsletter .footer-newsletter form button:hover {
-  background:  linear-gradient(121.7deg, #00ffdd 2%, #0014ad 22.9%, #3B56A5 69%, #024e556c 99%);
+  background: linear-gradient(90deg,rgba(59,86,165,1)  0%,rgba(245,134,32,1)  100%);
   color:#dee0f2;
 }
 .newsletter .footer-newsletter form input:focus{

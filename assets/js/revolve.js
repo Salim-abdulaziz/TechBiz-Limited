@@ -133,6 +133,7 @@ jQuery(document).ready(function ($) {
   var slideItem = 3;
   var spead = 150;
   var slideMargin = 20;
+  var goNextInterval;
   var sliderWraper = $('#wrap-sh-slider').width();
 
   var slideCount = $('.sh-slider ul li').length;
@@ -208,7 +209,6 @@ jQuery(document).ready(function ($) {
       $('.sh-slider ul').css('left', '');
     });
     
-          
     removeShadow($('.sh-slider ul li:last-child'));
     removeShadow($('.sh-slider ul li:first-child').next().next().next());   
   };
@@ -270,10 +270,16 @@ jQuery(document).ready(function ($) {
 
   $('a.control_prev').click(function () {
     moveLeft();
-  });
+      clearInterval(goNextInterval);  /*clears the interval to prevent conflict between going to left and goint to the right.*/
+    goNextInterval=setInterval(moveRight, 2500);
+        return;
+});
 
   $('a.control_next').click(function () {
     moveRight();
+    clearInterval(goNextInterval);  /*clears the interval to prevent conflict between going to left and goint to the right.*/
+    goNextInterval=setInterval(moveRight, 2500);
   });
-  setInterval(moveRight, 2500);
+
+  goNextInterval=setInterval(moveRight, 2500);
 });    
